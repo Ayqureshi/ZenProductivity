@@ -1,16 +1,21 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import firebase from 'firebase/app';
-import 'firebase/firestore'; // import any other Firebase services you need
+// import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import 'firebase/firestore';
+
+import { getAuth } from 'firebase/compat/auth';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
+  production: false,
   apiKey: "AIzaSyBg6sFvZaQTaAiYQfTxVdoPGnC-AUS8AMc",
   authDomain: "zenproductivity-f4295.firebaseapp.com",
+  databaseURL: "https://zenproductivity-f4295-default-rtdb.firebaseio.com",
   projectId: "zenproductivity-f4295",
   storageBucket: "zenproductivity-f4295.appspot.com",
   messagingSenderId: "746881895708",
@@ -20,8 +25,11 @@ const firebaseConfig = {
 
 
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
 export const firestore = firebase.firestore();
+export const auth = getAuth(app);
+export default app;
