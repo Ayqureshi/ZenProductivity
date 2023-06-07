@@ -5,19 +5,13 @@ import Home from './components/Home';
 import Assessments from './components/Assessments';
 import TherapyModules from './components/TherapyModules';
 import Resources from './components/Resources';
-import SignIn from './components/auth/SignIn';
-import SignUp from './components/auth/SignUp';
-import AuthDetails from './components/AuthDetails';
+import Loggingin from './components/loggingin';
+
 
 
 const App = () => {
   return ( 
     <Router>
-      <div className="App">
-      <SignIn />
-      <SignUp />
-      <AuthDetails />
-    </div>
       <nav className="navbar">
         <ul>
           <li>
@@ -32,6 +26,9 @@ const App = () => {
           <li>
             <Link to="/resources">Resources</Link>
           </li>
+          <li>
+            <Link to="/loggingin">Signup/Login</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -39,6 +36,7 @@ const App = () => {
         <Route path="/assessments" element={<Assessments />} />
         <Route path="/therapy-modules" element={<TherapyModules />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/loggingin" element={<Loggingin />} />
       </Routes>
     </Router>
   );
