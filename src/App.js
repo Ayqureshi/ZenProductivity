@@ -6,6 +6,7 @@ import Assessments from './components/Assessments';
 import TherapyModules from './components/TherapyModules';
 import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
+import Upload from './components/upload';
 
 
 
@@ -29,6 +30,9 @@ const App = () => {
           <li>
             <Link to="/loggingin">Signup/Login</Link>
           </li>
+          <li>
+            <Link to="/upload">Document upload</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -37,6 +41,7 @@ const App = () => {
         <Route path="/therapy-modules" element={<TherapyModules />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/loggingin" element={<Loggingin />} />
+        <Route path="/upload" element={<Upload />} />
       </Routes>
     </Router>
   );
