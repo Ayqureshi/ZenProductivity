@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -24,6 +25,12 @@ function Home() {
           <h2>Resources</h2>
           <p>Access a curated collection of articles, books, and videos to learn more about mental health and find support.</p>
         </div>
+      </div>
+
+      <div className="button-container">
+        <a href="https://buy.stripe.com/3cseVu8yp3YQfio4gg" target="_blank" rel="noopener noreferrer">
+          <button>Buy Membership</button>
+        </a>
       </div>
     </div>
   );
