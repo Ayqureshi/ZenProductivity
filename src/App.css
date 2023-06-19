@@ -30,3 +30,6 @@ li {
   background-color: #61dafb;
   color: #fff;
 }
+.right-link {
+  margin-left: auto;
+}

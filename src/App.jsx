@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-import Assessments from './components/Assessments';
-import TherapyModules from './components/TherapyModules';
+import Articles from './components/Articles';
+import Interviews from './components/Interviews';
 import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
-import Upload from './components/upload';
+import CommunityForum from './components/CommunityForum';
+
 
 
 
@@ -19,29 +20,31 @@ const App = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/assessments">Assessments</Link>
+            <Link to="/articles">Articles</Link>
           </li>
           <li>
-            <Link to="/therapy-modules">Therapy Modules</Link>
+            <Link to="/interviews">Audio Interviews</Link>
+          </li>
+          <li>
+            <Link to="/community-forum">Community Forum</Link>
           </li>
           <li>
             <Link to="/resources">Resources</Link>
           </li>
-          <li>
+          <li className="right-link">
             <Link to="/loggingin">Signup/Login</Link>
           </li>
-          <li>
-            <Link to="/upload">Document upload</Link>
-          </li>
+          
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/assessments" element={<Assessments />} />
-        <Route path="/therapy-modules" element={<TherapyModules />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/interviews" element={<Interviews />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/community-forum" element={<CommunityForum />} />
         <Route path="/loggingin" element={<Loggingin />} />
-        <Route path="/upload" element={<Upload />} />
+        
       </Routes>
     </Router>
   );

@@ -35,7 +35,7 @@ const AuthDetails = () => {
         <>
           <p>{`Signed In as ${authUser.email}`}</p>
           <p>Click this button to finish filling out your profile</p>
-          <Link to="./profile">Go to Profile</Link>
+          <Link to="/profile">Go to Profile</Link>
           <button onClick={userSignOut}>Sign Out</button>
         </>
       ) : (
@@ -43,7 +43,7 @@ const AuthDetails = () => {
       )}
 
       <Routes isAuthenticated={authUser}>
-        <Route path="./profile" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );

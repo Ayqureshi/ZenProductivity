@@ -1,29 +1,28 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
   return (
     <div className="home-bg">
-      <h1 className="title">Welcome to the Mental Health Program</h1>
+      <h1 className="title">Welcome to Zen Productivity</h1>
       <p className="description">
-        Here you can find various resources and tools to support your mental well-being.
+        Here you can find various resources and tools to support your ability to truly get in the &quot;zone&quot; of peak mental well-being and productivity.
       </p>
       <div className="features">
         <div className="feature">
           <i className="fas fa-heartbeat"></i>
-          <h2>Wellness Assessments</h2>
-          <p>Take assessments to evaluate your mental health and track your well-being over time.</p>
+          <h2>Articles</h2>
+          <p>Read about many of the ways we as individuals can grow and become more productive.</p>
         </div>
         <div className="feature">
           <i className="fas fa-cogs"></i>
-          <h2>Therapy Modules</h2>
-          <p>Explore interactive therapy modules designed to help you develop coping strategies and improve your mental resilience.</p>
+          <h2>Audio Interviews</h2>
+          <p>Learn from successful individuals on what habits they built to get to where they are and what they needed to focus on to keep them there.</p>
         </div>
         <div className="feature">
           <i className="fas fa-book"></i>
-          <h2>Resources</h2>
-          <p>Access a curated collection of articles, books, and videos to learn more about mental health and find support.</p>
+          <h2>Community</h2>
+          <p>Interact with other members in a way that enables both you and the other members to learn from each other and teach each others.</p>
         </div>
       </div>
 
