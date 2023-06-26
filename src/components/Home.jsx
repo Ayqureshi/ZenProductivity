@@ -22,7 +22,7 @@ function Home() {
         <div className="feature">
           <i className="fas fa-book"></i>
           <h2>Community</h2>
-          <p>Interact with other members in a way that enables both you and the other members to learn from each other and teach each others.</p>
+          <p>Interact with other members in a way that enables both you and the other members to learn from each other and teach each other.</p>
         </div>
       </div>
 
