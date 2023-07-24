@@ -1,27 +1,57 @@
 import React from 'react';
-import './Articles.css';
+//import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
+// Inside the Router component
 
 function Articles() {
   return (
-    <div className="container">
-      <h2 className="title">Articles</h2>
-      <p className="description">Explore articles related to mental health.</p>
-      {/* Add article components and logic here */}
-      <div className="article">
-        <h3>Article 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div className="article">
-        <h3>Article 2</h3>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div className="article">
-        <h3>Article 3</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      {/* Add more articles */}
+    <div>
+      <h1>Article Page</h1>
+      <button>
+        <Link to="/articles/Article1">Article1</Link>
+      </button>
+      <button>
+        <Link to="/articles/Article2">Article2</Link>
+      </button>
+      <button>
+        <Link to="/articles/Article3">Article3</Link>
+      </button>
+      <button>
+        <Link to="/articles/Article4">Article4</Link>
+      </button>
+      <button>
+        <Link to="/articles/Article5">Article5</Link>
+      </button>
+      <button>
+        <Link to="/articles/Article6">Article6</Link>
+      </button>
     </div>
   );
 }
+
+
+/*
+const ImageColumn = () => {
+  // Replace these image URLs with the actual paths to your images
+  const image1URL = 'pictures/articles_pic_1.jpeg';
+  const image2URL = 'pictures/articles_pic_2.jpg';
+  const image3URL = 'path/to/your/image3.jpg';
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ flex: 1 }}>
+        <img src={image1URL} alt="Image 1" style={{ width: '100%', marginBottom: '10px' }} />
+      </div>
+      <div style={{ flex: 1 }}>
+        <img src={image2URL} alt="Image 2" style={{ width: '100%', marginBottom: '10px' }} />
+        <img src={image3URL} alt="Image 3" style={{ width: '100%' }} />
+      </div>
+    </div>
+  );
+};
+*/
+//export default ImageColumn;
+
 
 export default Articles;
