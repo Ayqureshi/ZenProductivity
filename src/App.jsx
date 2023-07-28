@@ -8,6 +8,7 @@ import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
 import CommunityForum from './components/CommunityForum';
 import Questions from './components/auth/questionPage';
+import SignUp from './components/auth/SignUp';
 
 
 
@@ -43,8 +44,9 @@ const App = () => {
         <Route path="/interviews" element={<Interviews />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/community-forum" element={<CommunityForum />} />
-        <Route path="/loggingin/*" element={<Loggingin />} />
+        <Route path="/loggingin" element={<Loggingin />} />
         <Route path="/questions" element={<Questions />} />
+        <Route path="/signUp" element={<SignUp />} />
       </Routes>
     </Router>
   );
