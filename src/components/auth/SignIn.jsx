@@ -84,6 +84,9 @@ const SignIn = () => {
               onChange={(e) => setPassword(e.target.value)}
             ></input>
           </div>
+          <div className="resetPasswordContainer">
+            <Link to="/resetPassword" className="passwordResetText">Forgot Password?</Link>
+          </div>
           <button className="loginButtonContainer" type="submit">
             <div className="buttonText">
               Log In
@@ -111,8 +114,6 @@ const SignIn = () => {
           <span>Don&apos;t have an account? <Link to="/signUp" className="signUpRedirectText">Sign Up</Link></span>
         </div>
         </div>
-
-      
     </div>
   );
 };

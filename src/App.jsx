@@ -9,6 +9,7 @@ import Loggingin from './components/loggingin';
 import CommunityForum from './components/CommunityForum';
 import Questions from './components/auth/questionPage';
 import SignUp from './components/auth/SignUp';
+import ResetPassword from './components/auth/ResetPassword';
 
 
 
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/loggingin" element={<Loggingin />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/resetPassword" element={<ResetPassword />} />
       </Routes>
     </Router>
   );
