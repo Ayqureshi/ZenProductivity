@@ -8,8 +8,6 @@ import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
 import Community from './components/Community';
 import Questions from './components/auth/questionPage';
-import SignUp from './components/auth/SignUp';
-import ResetPassword from './components/auth/ResetPassword';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

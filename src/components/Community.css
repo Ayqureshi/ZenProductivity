@@ -1,0 +1,22 @@
+.CommunityHomeContainer {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+#communityHeader {
+    color: #00cc66;
+    font-size: 20px;
+}
+.containerHeader {
+    text-align: left;
+    background-color: #00cc66;
+    font-weight: bold;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#boxWrapper {
+    border: 2px solid;
+    border-color: #00cc66;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
