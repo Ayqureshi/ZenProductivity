@@ -1,0 +1,70 @@
+.postThumbnail-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+}
+
+.postThumbnail-profile-photo {
+    margin-right: 10px;
+}
+
+.postThumbnail-profile-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.postThumbnail-title {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.postThumbnail-replies-tags-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.postThumbnail-replies {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+    color: #9E9E9E;
+}
+
+.postThumbnail-tags {
+    display: flex;
+}
+
+.postThumbnail-tag {
+    padding: 2px 8px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Example tag colors */
+.postThumbnail-tag.red {
+    background-color: red;
+}
+
+.postThumbnail-tag.blue {
+    background-color: blue;
+}
+
+.postThumbnail-time-posted {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #9E9E9E;
+    text-align: right;
+    align-items: flex-start;
+}

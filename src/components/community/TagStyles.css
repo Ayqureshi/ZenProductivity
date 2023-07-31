@@ -1,0 +1,32 @@
+.tagContainer {
+    border: 1px solid black;
+    background-color: lightgray;
+    margin-top: 15px;
+    font-size: 1.8em;
+}
+/* Color Based on Tag */
+#tagContainerBeige {
+    border: 1px solid #E47C42;
+    background-color: #F9D6AE;
+    color: #E47C42;
+}
+#tagContainerBlue {
+    border: 1px solid #1E8C9B;
+    background-color: #60c6a775;
+    color: #1E8C9B;
+}
+#tagContainerPurple {
+    border: 1px solid #82108C;
+    background-color: rgba(146, 40, 146, 0.4);
+    color: #82108C;
+}
+#tagContainerWheat {
+    border: 1px solid #986D00;
+    background-color: #F6DD9D;
+    color: #986D00;
+}
+#tagContainerRed {
+    border: 1px solid #D02323;
+    background-color: #d0232368;
+    color: #D02323;
+}

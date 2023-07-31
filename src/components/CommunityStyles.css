@@ -1,0 +1,54 @@
+.communityHeader h2 {
+    color: #00cc66;
+    font-size: 100px;
+    font-weight: bolder;
+    padding: 0;
+}
+.submitContainer {
+    padding-left: 0;
+}
+.searchContainer div {
+    padding-right: 0;
+}
+.searchContainer input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    border-right: white;
+    border-radius: 20px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    box-shadow: none;
+    padding-left: 15px;
+}
+.searchContainer input:active {
+    border-color: #D9D9D9;
+}
+.searchContainer button {
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-left: white;
+    box-shadow: none;
+    color: black;
+}
+.searchContainer button:hover {
+    background-color: white;
+    border-color: #D9D9D9;
+    color: #00cc66;
+}
+.searchContainer button:active {
+    background-color: white;
+    border-color: #D9D9D9;
+}
+input::placeholder {
+    color: #c2c0c0;
+}
+  
+  
+  
+  

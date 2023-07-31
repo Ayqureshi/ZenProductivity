@@ -1,0 +1,33 @@
+.amountContainer {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    height: 48px;
+}
+.amountContainerHeader {
+    text-align: left;
+    background-color: #00cc66;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: 0px;
+    padding-left: 0px;
+    padding-right: 0;
+    margin-left: 0;
+}
+#numContainer {
+    border: 1px solid #00cc66;
+    color: black;
+    font-weight: lighter;
+    background-color: white;
+    border-radius: 10px;
+}
+#titleContainer {
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bolder;
+    font-size: 0.85em;
+    padding-top: 4px;
+}
