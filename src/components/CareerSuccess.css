@@ -1,0 +1,51 @@
+.rectangle {
+    position: relative;
+    display: flex;
+    flex-direction: column;  /* Stacks the children vertically */
+    justify-content: center; /* Centers children along the vertical axis */
+    align-items: flex-start;
+    background-color: #E47C42;
+    padding: 20px;
+    color: white;
+    height: 20vh;
+    border-radius: 0 0 35px 35px;
+    
+}
+.text-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+.text-section h1 {
+    font-size: 3vw; /* adjust this value as needed */
+    font-weight: 800;
+
+}
+
+.mic-container {
+    display: flex;
+    position:absolute;
+    top:10%;
+    left: 5%;
+    
+}
+.mic {
+    color:white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.microphone{
+    width:1.5vw;
+    height: auto;
+}
+.big-mic img {
+    position: absolute;
+    width: 5vw; /* adjust as needed */
+    height: auto; /* adjust as needed */
+    right:10vw;
+    bottom: 0vh;
+}
