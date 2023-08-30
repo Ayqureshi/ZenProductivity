@@ -1,0 +1,35 @@
+.CommunityHomeContainer {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.containerHeader {
+    text-align: left;
+    background-color: #00cc66;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+#boxWrapper {
+    padding: 0;
+    border: 2px solid;
+    border-color: #00cc66;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#ExploreTopics-boxWrapper {
+    padding: 0;
+    border: 2px solid;
+    border-color: #00cc66;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+h1 {
+    margin: 0em;
+    padding: 0em;
+    border: 1px solid #00cc66;
+}
