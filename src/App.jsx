@@ -8,10 +8,15 @@ import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
 import Community from './components/Community';
 import Questions from './components/auth/questionPage';
+import Article1 from './components/Article1';
+import Article2 from './components/Article2';
+import Article3 from './components/Article3';
+import Article4 from './components/Article4';
+import Article5 from './components/Article5';
+import Article6 from './components/Article6';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPassword';
-
 
 
 const App = () => {
@@ -49,6 +54,12 @@ const App = () => {
         <Route path="/community-forum" element={<CommunityForum />} />
         <Route path="/loggingin" element={<Loggingin />} />
         <Route path="/questions" element={<Questions />} />
+        <Route path="/articles/article1" element={<Article1/>} />
+        <Route path="/articles/article2" element={<Article2/>} />
+        <Route path="/articles/article3" element={<Article3/>} />
+        <Route path="/articles/article4" element={<Article4/>} />
+        <Route path="/articles/article5" element={<Article5/>} />
+        <Route path="/articles/article6" element={<Article6/>} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/resetPassword" element={<ResetPassword />} />
       </Routes>
