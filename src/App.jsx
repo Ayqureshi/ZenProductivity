@@ -6,7 +6,7 @@ import Articles from './components/Articles';
 import Interviews from './components/Interviews';
 import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
-import CommunityForum from './components/CommunityForum';
+import Community from './components/Community';
 import Questions from './components/auth/questionPage';
 import Article1 from './components/Article1';
 import Article2 from './components/Article2';
@@ -14,6 +14,9 @@ import Article3 from './components/Article3';
 import Article4 from './components/Article4';
 import Article5 from './components/Article5';
 import Article6 from './components/Article6';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SignUp from './components/auth/SignUp';
+import ResetPassword from './components/auth/ResetPassword';
 
 
 const App = () => {
@@ -31,7 +34,7 @@ const App = () => {
             <Link to="/interviews">Audio Interviews</Link>
           </li>
           <li>
-            <Link to="/community-forum">Community Forum</Link>
+            <Link to="/community">Community</Link>
           </li>
           <li>
             <Link to="/resources">Resources</Link>
@@ -47,8 +50,9 @@ const App = () => {
         <Route path="/articles" element={<Articles />} />
         <Route path="/interviews" element={<Interviews />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/community" element={<Community />} />
         <Route path="/community-forum" element={<CommunityForum />} />
-        <Route path="/loggingin/*" element={<Loggingin />} />
+        <Route path="/loggingin" element={<Loggingin />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/articles/article1" element={<Article1/>} />
         <Route path="/articles/article2" element={<Article2/>} />
@@ -56,6 +60,8 @@ const App = () => {
         <Route path="/articles/article4" element={<Article4/>} />
         <Route path="/articles/article5" element={<Article5/>} />
         <Route path="/articles/article6" element={<Article6/>} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/resetPassword" element={<ResetPassword />} />
       </Routes>
     </Router>
   );
