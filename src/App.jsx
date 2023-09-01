@@ -7,6 +7,7 @@ import Interviews from './components/Interviews';
 import Resources from './components/Resources';
 import Loggingin from './components/loggingin';
 import Community from './components/Community';
+import CommunityForum from './components/CommunityForum';
 import Questions from './components/auth/questionPage';
 import Article1 from './components/Article1';
 import Article2 from './components/Article2';
