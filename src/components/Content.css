@@ -1,0 +1,58 @@
+.content{
+    color:#00BF63;
+    font-size: 40px;
+    position: absolute;
+    top: 240px;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+}
+.content2{
+    width: 800px;
+    position: absolute;
+    top: 430px;
+    left: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.green-line {
+    height: 3px; 
+    width: 20%; 
+    background-color: #00BF63; 
+    position:absolute;
+    top: 500px;
+    left: 90px;
+  }
+
+.content3 {
+    width: 800px;
+    position: absolute;
+    top: 520px;
+    left: 90px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+.green-semi-circle {
+    width: 450px; /* Adjust the width of the semi-circle */
+    height: 450px; /* Adjust the height of the semi-circle */
+    background-color: #00BF63; /* Set the color to green or any desired color */
+    border-radius: 220px 220px 0 0; /* Make the top part rounded (half of width and height) */
+    position: fixed;
+    bottom: -10px;
+    right: -75px;
+}
+.edited-image {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 150px;
+}
