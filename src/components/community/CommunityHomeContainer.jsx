@@ -1,6 +1,6 @@
 import React from 'react';
 import './CommunityHomeContainerStyles.css';
-import PostThumbnail from './postThumbnail.jsx';
+import PostThumbnail from './PostThumbnail.jsx';
 
 const CommunityHomeContainer = (title) => {
 
