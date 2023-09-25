@@ -50,37 +50,6 @@ const CommentPage = () => {
         setNewReplyText('');
     }
 
-
-    // Function to add a reply to an existing comment
-    // const handleAddReply = async (commentId, replyText, userId) => {
-    //     try {
-    //         const newCommentId = "comment2";
-
-    //         // Reference the comment document
-    //         const commentRef = doc(db, 'comments', newCommentId);
-
-    //         // Reference the 'Replies' subcollection within the comment document
-    //         const repliesRef = collection(commentRef, 'replies');
-
-    //         // Create a new reply document in the 'Replies' subcollection
-    //         const replyData = {
-    //             text: replyText,
-    //             userId: userId,
-    //             timestamp: new Date(), // Use the current timestamp
-    //             likes: 0,
-    //         };
-
-    //         // Add the reply document to the 'Replies' subcollection
-    //         await addDoc(repliesRef, replyData);
-
-    //         console.log('Reply added successfully');
-    //     } catch (error) {
-    //         console.error('Error adding reply:', error);
-    //     }
-    //     setNewReplyText('');
-    // };
-
-
     return (
         <div className="container mt-5">
             <h1 className="mb-4">Comments and Replies</h1>
