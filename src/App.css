@@ -1,0 +1,35 @@
+/* Reset default browser styles for ul and li */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: blue;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the navigation links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Apply hover effect to the navigation links */
+.navbar a:hover {
+  background-color: #61dafb;
+  color: #fff;
+}
+.right-link {
+  margin-left: auto;
+}

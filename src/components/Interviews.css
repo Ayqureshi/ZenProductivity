@@ -1,0 +1,35 @@
+.interviews-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.interview {
+  margin-bottom: 20px;
+}
+
+.interview h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.interview p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.start-button {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #45b6d8;
+}
