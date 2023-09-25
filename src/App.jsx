@@ -18,6 +18,8 @@ import Article6 from './components/Article6';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPassword';
+// Testing Pages Below
+import CommentPage from './components/community/CommentPage';
 
 
 const App = () => {
@@ -63,6 +65,8 @@ const App = () => {
         <Route path="/articles/article6" element={<Article6/>} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/resetPassword" element={<ResetPassword />} />
+        {/* Testing Pages */}
+        <Route path="/comments" element={<CommentPage/>} />
       </Routes>
     </Router>
   );
