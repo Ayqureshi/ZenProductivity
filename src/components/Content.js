@@ -7,7 +7,7 @@ function Content() {
         <>
         <div className="content">
             <h1>Work smarter.</h1>
-            <h1>Chill harder!</h1>
+            <h1>Chill harder!&apos;</h1> {/* Escape the single quote */}
         </div>
         <div className="content2">
             <p>Discover a world of growth and connection through Zen Productivity’s vibrant community, engaging audio interviews, and enriching articles.</p>
@@ -16,11 +16,11 @@ function Content() {
         <div className="content3">
             <p>Gain valuable insights from like-minded individuals, delve into thought-provoking interviews with experts, and explore a wealth of articles to fuel your personal and professional growth.</p>
         <br></br>
-        Connect, learn, and thrive with our app's diverse resources at your fingertips.
+        Connect, learn, and thrive with our app&apos;s diverse resources at your fingertips. {/* Escape the single quote */}
         </div>
         <div className="green-semi-circle"></div>
         <div><img src={img2} alt ="" className="edited-image"/></div>
-            </>
+        </>
     );
 }
 

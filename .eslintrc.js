@@ -15,5 +15,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/jsx-uses-vars": 2
     }
 }

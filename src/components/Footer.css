@@ -1,0 +1,63 @@
+.footer {
+    background: linear-gradient(to right, #16CF76, #0097B2);
+    color: white;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    height: 200px;
+    border-radius: 100px 0 0 0;
+    z-index: 1000;
+    position: relative;
+  }
+  #flex-box{
+    display: flex;
+    height: 200px;
+    text-align: left;
+  }
+  #about-us{
+    padding: 50px;
+  }
+  #customer-care{
+    padding: 50px;
+  }
+  #stewarship{
+    padding: 50px;
+  }
+
+#footer-img{
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-right: 50px;
+    margin: 0;
+}
+#footer-img img {
+    width: 150px; /* set width */
+    height: auto; /* maintain aspect ratio */
+  }
+
+#vertical-line {
+    height: 80%;
+    width: 2px;
+    background-color: white;
+    margin: 0 10px;
+    
+  }
+
+  #copy-right{
+    padding: 50px;
+  }
+
+  #social-icons {
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  #social-icons img {
+    width: 26px;
+    height: 24px;
+    margin: 5px;
+    cursor: pointer;
+  }

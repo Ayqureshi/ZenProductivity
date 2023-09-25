@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+// import { Link } from 'react-router-dom';
 import img1 from '../images/zenpro.png';
 import "./NavbarStyles.css";
 
@@ -6,7 +7,7 @@ function Navbar(){
     return(
         <>
         <nav>
-            <img src={img1} alt =""/>
+            <img src={img1} alt="" />
             <div>
                 <ul id="navbar">
                     <li><a href="/">ABOUT US</a></li>

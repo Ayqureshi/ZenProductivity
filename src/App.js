@@ -10,6 +10,7 @@ import Entrepreneurship from './components/Entrepreneurship';
 import PersonalDevelopment from './components/PersonalDevelopment';
 import RemoteWork from './components/RemoteWork';
 import Episodes from './components/Episodes';
+import Footer from "./components/Footer";
 
 function HomePage() {
   return (
@@ -26,16 +27,20 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/audio" element={<Audio />} />
-          <Route path="/careersuccess" element={<CareerSuccess />} />
-          <Route path="/personalDevelopment" element={<PersonalDevelopment />} />
-          <Route path="/entrepreneurship" element={<Entrepreneurship />} />
-          <Route path="/remoteWork" element={<RemoteWork />} />
-          <Route path="/episodes/:index" element={<Episodes />} />          
-        </Routes>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/audio" element={<Audio />} />
+            <Route path="/careersuccess" element={<CareerSuccess />} />
+            <Route path="/personalDevelopment" element={<PersonalDevelopment />} />
+            <Route path="/entrepreneurship" element={<Entrepreneurship />} />
+            <Route path="/remoteWork" element={<RemoteWork />} />
+            <Route path="/episodes/:index" element={<Episodes />} />          
+          </Routes>
+        </div>
+        
       </div>
+      <Footer />
     </Router>
     
   );
