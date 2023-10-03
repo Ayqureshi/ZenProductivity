@@ -15,9 +15,5 @@ module.exports = {
         "react"
     ],
     "rules": {
-<<<<<<< HEAD
-=======
-        "react/jsx-uses-vars": 2
->>>>>>> new-branch
     }
 }
