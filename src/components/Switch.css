@@ -1,0 +1,41 @@
+.switch{
+    display: flex;
+    width: 170px;
+    height: 70px;
+    background-color: #00BF63;
+    color: white;
+    font-size: 30px;
+    border-radius: 150px; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    text-decoration: none;
+}
+
+.button{
+    display: flex;
+    width: 170px;
+    height: 70px;
+    background-color: white;
+    color: #00BF63;
+    font-size: 30px;
+    border-radius: 100px; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 160px;
+    left: 280px;
+    border: 3px solid #00BF63; 
+    
+}
+
+.switch a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.button a {
+    text-decoration: none;
+    color: #00BF63;
+}
