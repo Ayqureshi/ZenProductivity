@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from 'react-router-dom'; // Import the Link component
 import './Content.css';
 import img2 from '../images/whitez.png';
 
 
 function Content() {
     return (
+
         <div className = "app-container">
         <div className="content">
             <h1>Work smarter.</h1>
@@ -61,7 +63,8 @@ function Content() {
                 </div>
             </div>
         </div>
-        
+        <Link to="/contact">Go to Contact Page</Link> {/* Add this Link component */}
+
         </div>
 
     );
