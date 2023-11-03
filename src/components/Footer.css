@@ -1,7 +1,6 @@
 .footer {
     background: linear-gradient(to right, #16CF76, #0097B2);
     color: white;
-    bottom: 0;
     width: 100%;
     text-align: center;
     padding: 1em 0;
@@ -9,6 +8,7 @@
     border-radius: 100px 0 0 0;
     z-index: 1000;
     position: relative;
+    /* bottom: 0; */
   }
   #flex-box{
     display: flex;

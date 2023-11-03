@@ -1,3 +1,10 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
 .content{
     color:#00BF63;
     font-size: 40px;
@@ -18,7 +25,7 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -27,32 +34,138 @@
     width: 20%; 
     background-color: #00BF63; 
     position:absolute;
-    top: 500px;
+    top: 510px;
     left: 90px;
   }
 
 .content3 {
     width: 800px;
     position: absolute;
-    top: 520px;
+    top: 530px;
     left: 90px;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .green-semi-circle {
-    width: 450px; /* Adjust the width of the semi-circle */
+    width: 400px; /* Adjust the width of the semi-circle */
     height: 450px; /* Adjust the height of the semi-circle */
     background-color: #00BF63; /* Set the color to green or any desired color */
     border-radius: 220px 220px 0 0; /* Make the top part rounded (half of width and height) */
-    position: fixed;
-    bottom: -10px;
-    right: -75px;
+    margin-left: 1200px;
+    margin-top: 170px;
 }
 .edited-image {
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     right: 0px;
-    width: 150px;
+    width: 200px;
+}
+.green-rectangle{
+    width: 1000px;
+    height: 200px;
+    background:#00BF63;
+    /* position: absolute; */
+    top: 1150px; /*Adjust the top position as needed */
+    left: 90px; /*Adjust the left position as needed */
+    border-radius: 50px 0 0 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 45px; /* Adjust the font size as needed */
+    text-align: left;
+    padding-left: 100px; 
+    padding-top: 28px;
+    line-height: 1;
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
+    margin-left: 100px;
+    margin-top: 0px;
+
+}
+
+.white-line{
+    width: 10px; 
+    height: 180px; 
+    background-color: white; 
+    /* position:absolute; */
+    top: 1180px;
+    left: 130px;
+    margin-left: -60px;
+    margin-top: -135px;
+}
+
+.black-line{
+    width: 10px; 
+    height: 175px; 
+    background-color: #00BF63; 
+    top: 1350px;
+    left: 130px;
+    margin-left: 140px;
+    margin-top: 0px;
+}
+
+.content4{
+    width: 625px;
+    /* position: absolute; */
+    top: 1400px;
+    left: 154px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: -150px;
+}
+
+.table-image{
+    /* position: absolute; */
+    top: 1150px;
+    right: 0px;
+    width: 650px;
+    border-radius: 80px 0 0 80px;
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
+    margin-left: 875px;
+    margin-top: -341px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment as needed */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px; /* Set a maximum width for the container */
+}
+
+.goals-image, .learning-image, .network-image {
+    /* Remove margin-top and margin-left properties */
+    width: 400px;
+    height: auto;
+    border-radius: 80px 80px 0 0;
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
+    margin-right: 50px;
+    margin-top: 120px;
+}
+
+.image-card {
+    text-align: center;
+    width: 420px;
+    margin-right: 20px; /* Add margin-right for spacing */
+}
+
+.networking-content, .learning-content, .goals-content {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.networking-title, .learning-title, .goals-title{
+    color:#00BF63;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 30px;
 }
