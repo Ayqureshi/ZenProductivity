@@ -1,6 +1,5 @@
 import React from "react";
 import './Audio.css';
-import img3 from '../images/mic.png';
 import img4 from '../images/search.png';
 import img2 from '../images/whitez.png';
 import { Link } from 'react-router-dom';
@@ -9,7 +8,6 @@ function Audio() {
     return (
         <div className="audio-page">
         <div className="audio-container">
-                <img src={img3} alt="" className="audio-image" />
                 <p className="audio-text">Audio</p>
         </div>
         <div className="search-container">

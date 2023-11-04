@@ -1,7 +1,7 @@
 .back-button {
-    background: #00BF63;
+    background: black;
     color: white;
-    width: 150px;
+    width: 300px;
     height: 50px;
     border: none;
     border-radius: 25px;
@@ -14,7 +14,7 @@
     margin-left: 100px;
     margin-top: 50px;
     &:hover {
-        background-color: darkgreen;
+        background-color: gray;
     }
 }
 
@@ -31,25 +31,86 @@
     
 }
 
-.microphone-image {
-    width: 30%; /* For example, you can adjust as needed */
-    height: 50%; /* Keeps the aspect ratio of the image */
+#title{
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Center horizontally within .title */
+    align-items: center; /* Center vertically within .title */
+    margin: 0 auto; /* Center horizontally within the parent container */
     
 }
 
-.green-box {
-    background-color: #00BF63;
-    width: 70%; /* Takes the remaining half of the container width */
-    height: 50%; /* Takes the full height of the parent div (adjusted by image) */
-    border-radius: 0 25px 25px 0;
+.microphone-image {
+    /*
+    width: 30%; /* For example, you can adjust as needed
+    height: 50%; /* Keeps the aspect ratio of the image
+    */
+    /* margin: 0 auto;  */
+    flex-direction: row;
+    height: 80%;
+    margin: auto;
+    display: block;
+    margin-left: 80px;
+    margin-top: 60px;
+    border-radius: 30px;
+    
+    
 }
 
-.episode1-text{
-    margin-top: -50px;
-    margin-right: 50px;
+.text-box {
+    width: 50%; /* Takes the remaining half of the container width */
+    height: 50%; /* Takes the full height of the parent div (adjusted by image) */
+    margin-right: 70px;
+    margin-top: 100px;
+}
+
+.episode1-title{
+    margin-top: 50px;
+}
+.episode1-player{
+    margin-top: -180px;
+    margin-right: 150px;
     color:#000;
     font-size: 0.8em;
     flex-direction: column;
     align-items: start;
     flex-wrap: wrap;   
+    margin-left: auto; 
 }
+.progress-bar{
+    margin-left: -80px; 
+    width: 150%;
+}
+.forward-button{
+    width:34px;
+    margin-bottom: 6px;;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.play-button{
+    width:50px;
+    margin-left: 100px;
+    margin-right:100px;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.pause-button{
+    width:50px;
+    margin-left: 100px;
+    margin-right:100px;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.backward-button{
+    width:50px;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.episode1-footer {
+    bottom: -10000px;
+  }

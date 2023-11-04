@@ -3,11 +3,11 @@
     align-items: center;
     justify-content: center;   
     position: relative;
-    top:2vh;
+    top:20px;
 }
 .audio-text {
-    color:#00BF63;
-    font-size: 80px;
+    color:black;
+    font-size: 70px;
     font-weight: bold;
 }
 .audio-image{
@@ -55,7 +55,7 @@
     position: absolute;
     height:200px;
     width:90%;
-    background-color: #E47C42;
+    background-color: #6242E4;
     border-radius: 50px;
     left: 5%;
     top:42vh;
@@ -64,7 +64,7 @@
     position: absolute;
     height:200px;
     width:90%;
-    background-color: #6860C7;
+    background-color: #4283E4;
     border-radius: 50px;
     left: 5%;
     top:56vh;
@@ -73,7 +73,7 @@
     position: absolute;
     height:200px;
     width:90%;
-    background-color: #1E8C9B;
+    background-color: #34734D;
     border-radius: 50px;
     left: 5%;
     top:70vh; /* Adjust this value as necessary */
@@ -82,12 +82,14 @@
 
 .remote{
     position: absolute;
-    height:200px;
+    height:500px;
     width:90%;
-    background-color: #82108C;
+    background-color: #70BFA8;
     border-radius: 50px;
     left: 5%;
-    top:84vh;
+    top:80vh;
+
+    margin-top: 20px;
     
 }
 
@@ -106,9 +108,13 @@
 
 .zen-image{
     position: absolute;
-    top:-10px;
+    top:350px;
     right: 0px;
     height: 140px;
     width: auto;
 }
-
+.footer {
+    /* bottom: -650px; */
+    display: none;
+}
+ 
