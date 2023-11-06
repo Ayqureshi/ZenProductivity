@@ -10,7 +10,7 @@
     justify-content: center;
     position: absolute;
     top: 120px;
-    left: -200px; /* Adjusted position for the increased width */
+    left: -245px; /* Adjusted position for the increased width */
     text-decoration: none;
 }
 
@@ -26,7 +26,7 @@
     justify-content: center;
     position: absolute;
     top: 120px;
-    left: 120px; /* Adjusted position for the increased width */
+    left: 75px; /* Adjusted position for the increased width */
     border: 3px solid #70BFA8;
 }
 
