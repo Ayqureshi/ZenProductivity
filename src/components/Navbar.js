@@ -8,7 +8,9 @@ function Navbar(){
     return(
         <>
         <nav>
+        <a href="/">
             <img src={img1} alt="" />
+        </a>
             <div>
                 <ul id="navbar">
                     <li><a href="/">ABOUT US</a></li>

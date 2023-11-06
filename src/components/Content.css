@@ -1,171 +1,199 @@
+/* Styling for the main container */
 .app-container{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    min-height: 100vh; /* Minimum height of the viewport */
+    justify-content: space-between; /* Space between items */
 }
 
+/* Styling for the main content */
 .content{
-    color:#00BF63;
-    font-size: 40px;
-    position: absolute;
-    top: 240px;
-    left: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    color:#70BFA8; /* Text color */
+    position: absolute; /* Positioned absolutely */
+    top: 240px; /* Positioned 240px from the top */
+    left: 90px; /* Positioned 90px from the left */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start */
+    font-family: 'Inter', sans-serif; /* Font family */
+    font-size: 75px; /* Font size */
+    text-align: center; /* Center align the content */
+    padding-top: 1px; /* Top padding */
+   
 }
+
+/* Styling for switch buttons */
+.switch-buttons {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content */
+    margin-top: 20px; /* Margin from the top */
+    position: relative; /* Relative positioning */
+    top: -80px; /* Adjusted position from the top */
+    left: 300px; /* Adjusted position from the left */
+}
+
+/* Second content section */
 .content2{
-    width: 800px;
-    position: absolute;
-    top: 430px;
-    left: 90px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 25px;
+    width: 800px; /* Set width */
+    position: absolute; /* Positioned absolutely */
+    top: 430px; /* Positioned 430px from the top */
+    left: 90px; /* Positioned 90px from the left */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 25px; /* Font size */
 }
 
-
+/* Styling for a green line */
 .green-line {
-    height: 3px; 
-    width: 20%; 
-    background-color: #00BF63; 
-    position:absolute;
-    top: 510px;
-    left: 90px;
-  }
+    height: 3px; /* Set height */
+    width: 20%; /* Set width */
+    background-color: #70BFA8; /* Color of the line */
+    position:absolute; /* Positioned absolutely */
+    top: 510px; /* Positioned 510px from the top */
+    left: 90px; /* Positioned 90px from the left */
+}
 
+/* Third content section */
 .content3 {
-    width: 800px;
-    position: absolute;
-    top: 530px;
-    left: 90px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 25px;
+    width: 800px; /* Set width */
+    position: absolute; /* Positioned absolutely */
+    top: 530px; /* Positioned 530px from the top */
+    left: 90px; /* Positioned 90px from the left */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 25px; /* Font size */
 }
 
+/* Styling for a green semi-circle */
 .green-semi-circle {
-    width: 400px; /* Adjust the width of the semi-circle */
-    height: 450px; /* Adjust the height of the semi-circle */
-    background-color: #00BF63; /* Set the color to green or any desired color */
-    border-radius: 220px 220px 0 0; /* Make the top part rounded (half of width and height) */
-    margin-left: 1200px;
-    margin-top: 170px;
+    width: 300px; /* Set width */
+    height: 450px; /* Set height */
+    background-color: #70BFA8; /* Color of the semi-circle */
+    border-radius: 220px 220px 0 0; /* Define border radius */
+    margin-left: 1200px; /* Adjusted left margin */
+    margin-top: 170px; /* Adjusted top margin */
+    margin-bottom: 230px; /* Adjusted bottom margin */
 }
+
+/* Styling for an edited image */
 .edited-image {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 200px;
+    position: absolute; /* Positioned absolutely */
+    bottom: 0px; /* Positioned at the bottom */
+    right: 0px; /* Positioned at the right */
+    width: 200px; /* Set width */
 }
+
+/* Styling for a green rectangle */
 .green-rectangle{
-    width: 1000px;
-    height: 200px;
-    background:#00BF63;
-    /* position: absolute; */
-    top: 1150px; /*Adjust the top position as needed */
-    left: 90px; /*Adjust the left position as needed */
-    border-radius: 50px 0 0 50px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 45px; /* Adjust the font size as needed */
-    text-align: left;
-    padding-left: 100px; 
-    padding-top: 28px;
-    line-height: 1;
-    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
-    margin-left: 100px;
-    margin-top: 0px;
-
+    width: 1050px; /* Set width */
+    height: 200px; /* Set height */
+    background:#70BFA8; /* Color of the rectangle */
+    top: 1150px; /* Positioned 1150px from the top */
+    left: 90px; /* Positioned 90px from the left */
+    border-radius: 50px 0 0 50px; /* Define border radius */
+    justify-content: center; /* Center justify content */
+    align-items: center; /* Center align items */
+    color: white; /* Text color */
+    font-size: 55px; /* Font size */
+    text-align: left; /* Left align the text */
+    padding-left: 100px; /* Left padding */
+    padding-top: 28px; /* Top padding */
+    line-height: 1; /* Line height */
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
+    margin-left: 100px; /* Adjusted left margin */
+    margin-top: 0px; /* Adjusted top margin */
 }
 
+/* Styling for a white line */
 .white-line{
-    width: 10px; 
-    height: 180px; 
-    background-color: white; 
-    /* position:absolute; */
-    top: 1180px;
-    left: 130px;
-    margin-left: -60px;
-    margin-top: -135px;
+    width: 10px; /* Set width */
+    height: 180px; /* Set height */
+    background-color: white; /* Color of the line */
+    top: 1180px; /* Positioned 1180px from the top */
+    left: 130px; /* Positioned 130px from the left */
+    margin-left: -60px; /* Adjusted left margin */
+    margin-top: -135px; /* Adjusted top margin */
 }
 
+/* Styling for a black line */
 .black-line{
-    width: 10px; 
-    height: 175px; 
-    background-color: #00BF63; 
-    top: 1350px;
-    left: 130px;
-    margin-left: 140px;
-    margin-top: 0px;
+    width: 10px; /* Set width */
+    height: 175px; /* Set height */
+    background-color: #70BFA8; /* Color of the line */
+    top: 1350px; /* Positioned 1350px from the top */
+    left: 130px; /* Positioned 130px from the left */
+    margin-left: 140px; /* Adjusted left margin */
+    margin-top: 0px; /* Adjusted top margin */
 }
 
+/* Fourth content section */
 .content4{
-    width: 625px;
-    /* position: absolute; */
-    top: 1400px;
-    left: 154px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 25px;
-    margin-left: 200px;
-    margin-top: -150px;
+    width: 625px; /* Set width */
+    top: 1400px; /* Positioned 1400px from the top */
+    left: 154px; /* Positioned 154px from the left */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 25px; /* Font size */
+    margin-left: 200px; /* Adjusted left margin */
+    margin-top: -150px; /* Adjusted top margin */
 }
 
+/* Styling for a table image */
 .table-image{
-    /* position: absolute; */
-    top: 1150px;
-    right: 0px;
-    width: 650px;
-    border-radius: 80px 0 0 80px;
-    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
-    margin-left: 875px;
-    margin-top: -341px;
+    top: 1150px; /* Positioned 1150px from the top */
+    right: 0px; /* Positioned at the right */
+    width: 650px; /* Set width */
+    border-radius: 80px 0 0 80px; /* Define border radius */
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
+    margin-left: 875px; /* Adjusted left margin */
+    margin-top: -341px; /* Adjusted top margin */
 }
 
+/* Styling for the image container */
 .image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Adjust alignment as needed */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the start */
     margin: 0 auto; /* Center horizontally */
-    max-width: 1200px; /* Set a maximum width for the container */
+    max-width: 1200px; /* Set maximum width */
 }
 
+/* Styling for different images */
 .goals-image, .learning-image, .network-image {
-    /* Remove margin-top and margin-left properties */
-    width: 400px;
-    height: auto;
-    border-radius: 80px 80px 0 0;
-    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
-    margin-right: 50px;
-    margin-top: 120px;
+    width: 400px; /* Set width */
+    height: auto; /* Auto height */
+    border-radius: 80px 80px 0 0; /* Define border radius */
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
+    margin-right: 50px; /* Right margin */
+    margin-top: 120px; /* Top margin */
+    margin-left: -120px; /* Left margin */
 }
 
+/* Styling for image card */
 .image-card {
-    text-align: center;
-    width: 420px;
-    margin-right: 20px; /* Add margin-right for spacing */
+    text-align: center; /* Center align the text */
+    width: 420px; /* Set width */
+    margin-right: 200px; /* Right margin for spacing */
 }
 
+/* Styling for networking, learning, and goals content */
 .networking-content, .learning-content, .goals-content {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 20px;
-    line-height: 1.2;
-    margin-top: 25px;
-    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 20px; /* Font size */
+    line-height: 1.2; /* Line height */
+    margin-top: 25px; /* Top margin */
+    margin-bottom: 100px; /* Bottom margin */
+    margin-left: -120px; /* Left margin */
 }
 
+/* Styling for networking, learning, and goals title */
 .networking-title, .learning-title, .goals-title{
-    color:#00BF63;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 30px;
-    line-height: 1.2;
-    margin-top: 30px;
+    color:#70BFA8; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 30px; /* Font size */
+    line-height: 1.2; /* Line height */
+    margin-top: 30px; /* Top margin */
+    margin-left: -120px; /* Left margin */
 }

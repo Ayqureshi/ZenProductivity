@@ -1,63 +1,76 @@
+/* Styling for the footer section */
 .footer {
-    background: linear-gradient(to right, #16CF76, #0097B2);
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 1em 0;
-    height: 200px;
-    border-radius: 100px 0 0 0;
-    z-index: 1000;
-    position: relative;
-    /* bottom: 0; */
-  }
-  #flex-box{
-    display: flex;
-    height: 200px;
-    text-align: left;
-  }
-  #about-us{
-    padding: 50px;
-  }
-  #customer-care{
-    padding: 50px;
-  }
-  #stewarship{
-    padding: 50px;
-  }
-
-#footer-img{
-    padding-left: 100px;
-    padding-top: 0px;
-    padding-right: 50px;
-    margin: 0;
+  background: hsl(198, 100%, 95%); /* Light blue background color */
+  color: black; /* Text color is black */
+  width: 100%; /* Full width */
+  text-align: center; /* Text alignment at the center */
+  padding: 0.5em 0 0 0; /* Reduced top and bottom padding */
+  height: 120px; /* Fixed height of the footer */
+  border-radius: 50px 0 0 0; /* Adjusted border radius */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Icons on the left, text on the right */
+  position: relative; /* Set the position to relative */
+  margin-top: auto; /* Moves the footer to the bottom of its container */
+  bottom: 0px;
+  margin-bottom: -50px;
 }
+
+/* Styling for the elements within the footer */
+#flex-box {
+  display: flex; /* Use flexbox */
+  height: 100px; /* Adjusted height */
+  align-items: center; /* Center align items vertically */
+}
+
+#about-us,
+#customer-care,
+#stewarship,
+#copy-right {
+  flex: 1; /* Equal flex distribution within the container */
+  padding: 1em; /* Padding around text elements */
+  text-align: left; /* Align text to the left */
+  order: 2; /* Change the order to place the text sections on the right */
+  margin-right: 90px; /* Add right margin for spacing */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+#footer-img {
+  padding: 0 50px; /* Padding for the image */
+  margin: 0; /* No margin */
+}
+
 #footer-img img {
-    width: 150px; /* set width */
-    height: auto; /* maintain aspect ratio */
-  }
+  width: 150px; /* Set the width of the image */
+  height: auto; /* Maintain the image's aspect ratio */
+  margin-right: 20px; /* Add right margin for spacing */
+}
 
 #vertical-line {
-    height: 80%;
-    width: 2px;
-    background-color: white;
-    margin: 0 10px;
-    
-  }
+  height: 70%; /* Set the height */
+  width: 2px; /* Set the width */
+  background-color: black; /* Black vertical line */
+  position: absolute; /* Positioned absolutely */
+  right: 570px; /* Positioned 20px from the right side */
+  z-index: 10; /* Set a higher z-index */
+}
 
-  #copy-right{
-    padding: 50px;
-  }
+#copy-right {
+  padding: 1em; /* Padding around the text element */
+  flex: 1; /* Equal flex distribution */
+}
 
-  #social-icons {
-    margin-top: -30px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+#social-icons {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center align items vertically */
+  order: 1; /* Change the order to place the icons on the left */
+  margin-left: 50px; /* Left margin for spacing */
+  margin-right: 50px; /* Right margin for spacing */
+}
 
-  }
-  #social-icons img {
-    width: 26px;
-    height: 24px;
-    margin: 5px;
-    cursor: pointer;
-  }
+#social-icons img {
+  width: 3vw; /* Set the width of icons */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 100px; /* Add right margin for spacing */
+  cursor: pointer; /* Cursor style as pointer */
+}
