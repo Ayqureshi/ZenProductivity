@@ -5,7 +5,7 @@
   width: 100%; /* Full width */
   text-align: center; /* Text alignment at the center */
   padding: 0.5em 0 0 0; /* Reduced top and bottom padding */
-  height: 120px; /* Fixed height of the footer */
+  height: 80px; /* Fixed height of the footer */
   border-radius: 50px 0 0 0; /* Adjusted border radius */
   display: flex; /* Use flexbox */
   align-items: center; /* Center align items vertically */
@@ -14,12 +14,13 @@
   margin-top: auto; /* Moves the footer to the bottom of its container */
   bottom: 0px;
   margin-bottom: -50px;
+  font-size: 12px;
 }
 
 /* Styling for the elements within the footer */
 #flex-box {
   display: flex; /* Use flexbox */
-  height: 100px; /* Adjusted height */
+  height: 80px; /* Adjusted height */
   align-items: center; /* Center align items vertically */
 }
 
@@ -47,11 +48,11 @@
 }
 
 #vertical-line {
-  height: 70%; /* Set the height */
+  height: 85%; /* Set the height */
   width: 2px; /* Set the width */
   background-color: black; /* Black vertical line */
   position: absolute; /* Positioned absolutely */
-  right: 570px; /* Positioned 20px from the right side */
+  right: 280px; /* Positioned 20px from the right side */
   z-index: 10; /* Set a higher z-index */
 }
 
