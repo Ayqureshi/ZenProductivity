@@ -1,0 +1,95 @@
+.title {
+    text-align: center;
+    justify-content: center;
+    display: flex;            
+    position: relative;
+    top:5vh;
+  }
+  
+  .title-text {
+    font-size: 2.25rem;
+    color: #000000;
+    padding: 0;
+  }
+  
+  .img-container {
+    position: relative;
+  }
+  
+  .img-mission {
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .img-facts {
+    width: 300px;
+    height: auto;
+  }
+  
+  .img-redCouch {
+    max-width: 450px;
+    height: 425px;
+  }
+  
+  .img-tele {
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .body-container {
+      top: 15vh;
+      position: relative;
+      margin-left: 20vh;
+      margin-right: 20vh;
+      margin-bottom: 20vh;
+  }
+    
+  .body {
+      margin-bottom: 10vh;
+      position: relative;
+      text-align: center;
+      font-size: 25px;
+  }
+  
+  .images {
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    position:relative;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .imageText {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    position:relative;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .imageText2 {
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    position:relative;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .imageTextBody {
+    margin: 10vh;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+  }

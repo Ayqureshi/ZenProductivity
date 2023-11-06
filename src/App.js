@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import "./styles.css";
-import Switch from "./components/Switch";
+// import Switch from "./components/Switch";
 import Content from "./components/Content";
 import Audio from "./components/Audio";
 import CareerSuccess from './components/CareerSuccess';
@@ -23,6 +23,8 @@ import Article3 from './components/Article3';
 import Article4 from './components/Article4';
 import Article5 from './components/Article5';
 import Article6 from './components/Article6';
+import OurMission from "./components/OurMission";
+import OurTeam from "./components/OurTeam";
 
 
 
@@ -31,7 +33,7 @@ import Article6 from './components/Article6';
 function HomePage() {
   return (
     <div>
-      <Switch rounded={true} />
+      {/* <Switch rounded={true} /> */}
       <Content/>
     </div>
   );
@@ -53,6 +55,8 @@ function App() {
             <Route path ="/article4" element={<Article4 />} />
             <Route path ="/article5" element={<Article5 />} />
             <Route path ="/article6" element={<Article6 />} />
+            <Route path="/ourmission" element={<OurMission />} />
+            <Route path="/ourteam" element={<OurTeam />} />
             {/* <Route path="/community" element={<Community />} /> */}
             <Route path="/articles" element={<Articles />} />
             {/* <Route path="/loggingin" element={<Loggingin />} />

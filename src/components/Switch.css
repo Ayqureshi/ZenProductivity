@@ -1,34 +1,33 @@
-.switch{
+.switch {
     display: flex;
-    width: 170px;
-    height: 70px;
-    background-color: #00BF63;
+    width: 250px; /* Increased width */
+    height: 80px; /* Increased height */
+    background-color: #70BFA8;
     color: white;
-    font-size: 30px;
-    border-radius: 150px; 
+    font-size: 40px; /* Increased font size */
+    border-radius: 150px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 160px;
-    left: 80px;
+    top: 120px;
+    left: -200px; /* Adjusted position for the increased width */
     text-decoration: none;
 }
 
-.button{
+.button {
     display: flex;
-    width: 170px;
-    height: 70px;
+    width: 250px; /* Increased width */
+    height: 80px; /* Increased height */
     background-color: white;
-    color: #00BF63;
-    font-size: 30px;
-    border-radius: 100px; 
+    color: #70BFA8;
+    font-size: 40px; /* Increased font size */
+    border-radius: 100px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 160px;
-    left: 280px;
-    border: 3px solid #00BF63; 
-    
+    top: 120px;
+    left: 120px; /* Adjusted position for the increased width */
+    border: 3px solid #70BFA8;
 }
 
 .switch a {
@@ -37,5 +36,5 @@
 }
 .button a {
     text-decoration: none;
-    color: #00BF63;
+    color: #70BFA8;
 }
