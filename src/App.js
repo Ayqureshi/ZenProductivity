@@ -8,6 +8,8 @@ import Audio from "./components/Audio";
 import CareerSuccess from './components/CareerSuccess';
 import Entrepreneurship from './components/Entrepreneurship';
 import PersonalDevelopment from './components/PersonalDevelopment';
+import ContactUs from './components/ContactUs';
+import SupportRequest from './components/SupportRequest';
 import RemoteWork from './components/RemoteWork';
 import Episodes from './components/Episodes';
 import Footer from "./components/Footer";
@@ -62,6 +64,8 @@ function App() {
             <Route path="/careersuccess" element={<CareerSuccess />} />
             <Route path="/personalDevelopment" element={<PersonalDevelopment />} />
             <Route path="/entrepreneurship" element={<Entrepreneurship />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/support-request" element={<SupportRequest />} />
             <Route path="/remoteWork" element={<RemoteWork />} />
             <Route path="/episodes/:index" element={<Episodes />} />  
             {/* <Route path="/loggingin" element={<Loggingin />} />         */}

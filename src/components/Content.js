@@ -1,5 +1,4 @@
 import React from "react";
-
 import './Content.css';
 import Switch from "./Switch";
 import newHomePic from '../images/home_pic.png'; // Replace 'newImage.jpg' with the actual file name
@@ -60,7 +59,8 @@ function Content() {
                 </div>
             </div>
         </div>
-        
+        <Link to="/contact">Go to Contact Page</Link> {/* Add this Link component */}
+        <Link to="/support-request">Go to Support Request Page</Link> {/* Add this Link component */}
         </div>
 
     );
