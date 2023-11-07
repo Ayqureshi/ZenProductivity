@@ -11,50 +11,17 @@
     
 }
 .text-section {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-}
-.text-section h1 {
-    font-size: 3vw; /* adjust this value as needed */
-    font-weight: 800;
-
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 27px;
 }
 
-.mic-container {
-    display: flex;
-    position:absolute;
-    top:10%;
-    left: 5%;
-    
+.career-image{
+    width: 400px;
 }
-.mic {
-    color:white;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
-.microphone{
-    width:1.5vw;
-    height: auto;
-}
-.big-mic img {
-    position: absolute;
-    width: 5vw; /* adjust as needed */
-    height: auto; /* adjust as needed */
-    right:10vw;
-    bottom: 0vh;
-}
-.episode-header{
-    color: #00BF63;
-    font-size: 50px;
-    position: absolute; 
-    top: 40vh;
-    left: 3vw;
-}
+
+
 .playbutton{
     width: 5vw;
     position: absolute;
@@ -64,7 +31,7 @@
 .custom-list {
     list-style-type: none;
     padding: 0;
-    margin-top: 12vh;
+    margin-top: 30px;
     margin-left: 5vw;
 }
 
@@ -72,26 +39,69 @@
     display: flex;
     align-items: center;
     padding-top: 20px;
-    padding-bottom:  80px;  /* Adjust for spacing above and below each item */
-    border-bottom: 2px solid #00BF63;
+    padding-bottom:  30px;  /* Adjust for spacing above and below each item */
+    border-bottom: 2px solid black;
     width: 90vw;
 }
 .list-item:last-child {
     border-bottom: none;
 }
 .number {
-    margin-right: 10px;  /* Adjust spacing as needed */
+    margin-right: 20px;  /* Adjust spacing as needed */
     font-weight: bold;
     flex-shrink: 0;  /* Prevents the number from shrinking */
+    font-size: 30px;
 }
 
 .item-image {
-    width: 50px;   /* Adjust width as needed */
-    height: 50px;  /* Adjust height as needed */
-    margin-right: 10px;  /* Adjust spacing as needed */
+    width: 150px;   /* Adjust width as needed */
+    height: 150px;  /* Adjust height as needed */
+    margin-right: 40px;  /* Adjust spacing as needed */
+    margin-left: 40px;
     flex-shrink: 0;  /* Prevents the image from shrinking */
+    border-radius: 30px;
 }
 
 .body{
     overflow: auto;
 }
+
+.audio-content{
+    text-align: left;
+    margin-left: 10px;
+}
+.audio-content h3 {
+    font-size: 30px; /* Adjust the font size as needed */
+}
+.audio-content h3 a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: gray;
+    }
+}
+
+.back{
+    background: black;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s background-color;
+    margin-left: 100px;
+    margin-top: -50px;
+    &:hover {
+        background-color: gray;
+    }
+}
+
+/* .footer {
+    bottom: -1230px;
+    display: none;
+} */

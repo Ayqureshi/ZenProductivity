@@ -17,8 +17,8 @@ function Footer() {
         </div>
         <div id="customer-care">
           <p><strong>Customer Care</strong></p>
-          <p><a href="/contact" className="footer-text">Contact Us</a></p>
           <p><a href="/support-request" className="footer-text">Support Request</a></p>
+          <p><a href="/contact" className="footer-text">Contact Us</a></p>
         </div>
         <div id="stewarship">
           <p><strong>Stewarship</strong></p>
