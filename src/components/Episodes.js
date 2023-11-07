@@ -1,23 +1,117 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import './Episodes.css';
-import image from '../images/microphone.png';
+import image from '../images/marie-curie.png';
+import forwardbutton from '../images/forwardbutton.png';
+import backwardbutton from '../images/backwardbutton.png';
+import playbutton from '../images/playbutton.webp';
+import pausebutton from '../images/pausebutton.png';
+import { useState, useRef} from "react";
+
 
 function Episodes() {
     const navigate = useNavigate();
-
+    const audioURL = null;
+    const [audioStatus, changeAudioStatus] = useState(false);
+    const [currentTime, setCurrentTime] = useState(0);
+    const audioRef = useRef();
+    const startAudio = () => {
+        audioRef.current.play();
+        changeAudioStatus(true);
+      };
+    
+      const pauseAudio = () => {
+        audioRef.current.pause();
+        changeAudioStatus(false);
+      };
+    
+      const handleForward30Seconds = () => {
+        if (audioRef.current) {
+          console.log("forwarding??");
+          console.log(audioRef.current.currentTime);
+          audioRef.current.currentTime += 30;
+        }
+      };
+    
+      const handleBackward30Seconds = () => {
+        if (audioRef.current) {
+          console.log("going back??");
+          audioRef.current.currentTime -= 30;
+        }
+      };
+    
+      const handleTimeUpdate = () => {
+        setCurrentTime(audioRef.current.currentTime);
+      };
+    
+      const handleSliderChange = (e) => {
+        const newTime = parseFloat(e.target.value);
+        audioRef.current.currentTime = newTime;
+        setCurrentTime(newTime);
+      };
+    
     return (
-        <><button className="back-button" onClick={() => navigate(-1)}>
-            ← Back
-        </button>
+        <>
+        <div id="title">
+            <div className="episode1-title">
+                <h1>Episode 6 - Marie Curie’s Journey</h1>
+            </div>
+        </div>
         <div id="individual-episode">
                 <img src={image} alt="Episode Description" className="microphone-image" />
-                <div className="green-box"></div>
-                <div className="episode1-text">
-                    <h1>About this episode:</h1>
+                <div className="text-box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
-        </div></>
+                <div className="episode1-player">
+                <div>
+                  {audioURL ? (
+                    <audio ref={audioRef} src={audioURL} onTimeUpdate={handleTimeUpdate}>
+                    </audio>
+                  ) : (
+                    'Loading...' // when getting source
+                  )}
+                  <input
+                    className="progress-bar"
+                    type="range"
+                    min="0"
+                    max={audioRef.current ? audioRef.current.duration : 0}
+                    step="1"
+                    value={currentTime}
+                    onChange={handleSliderChange}
+                  />
+                </div>
+                <img src = {backwardbutton}
+                    alt="Backward 30 seconds"
+                    onClick={handleBackward30Seconds}
+                    className="backward-button" 
+                />
+                
+                  {/* adding buttons */}
+                  {audioStatus ? (
+                    <img src = {pausebutton}
+                    alt="Pause Button"
+                    onClick={pauseAudio}
+                    className="pause-button" />
+                  ) : (
+                    <img src = {playbutton}
+                    alt="Play Button"
+                    onClick={startAudio}
+                    className="play-button" />
+                  )}
+
+                <img src = {forwardbutton}
+                    alt="Forward 30 seconds"
+                    onClick={handleForward30Seconds}
+                    className="forward-button" 
+                />
+              
+
+
+                </div>
+        </div>
+        <button className="back-button" onClick={() => navigate(-1)}>
+            ← Career Success Stories
+        </button></>
     );
 }
 

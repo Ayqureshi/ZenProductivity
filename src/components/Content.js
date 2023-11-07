@@ -59,8 +59,7 @@ function Content() {
                 </div>
             </div>
         </div>
-        <Link to="/contact">Go to Contact Page</Link> {/* Add this Link component */}
-        <Link to="/support-request">Go to Support Request Page</Link> {/* Add this Link component */}
+
         </div>
 
     );

@@ -10,15 +10,21 @@
     font-size: 2.25rem;
     color: #000000;
     padding: 0;
+    margin-bottom: 20px;
   }
   
   .img-container {
+    margin-top: 10px;
     position: relative;
+    width: 700px;
+    height: 450px;
+    margin-left: 420px;
   }
   
   .img-mission {
-    max-width: 800px;
-    height: auto;
+    width: 800px;
+    /* max-width: 800px; */
+    height: 800px;
   }
   
   .img-facts {

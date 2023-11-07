@@ -15,6 +15,7 @@
   bottom: 0px;
   margin-bottom: -50px;
   font-size: 12px;
+  
 }
 
 /* Styling for the elements within the footer */
@@ -34,6 +35,8 @@
   order: 2; /* Change the order to place the text sections on the right */
   margin-right: 90px; /* Add right margin for spacing */
   margin-bottom: 10px; /* Add bottom margin */
+  text-decoration: none; /* Remove underlines from these text elements */
+  color: black; /* Set link color to black */
 }
 
 #footer-img {
@@ -71,7 +74,11 @@
 
 #social-icons img {
   width: 3vw; /* Set the width of icons */
-  height: auto; /* Maintain the aspect ratio */
+  height: 3vw; /* Maintain the aspect ratio */
   margin-right: 100px; /* Add right margin for spacing */
   cursor: pointer; /* Cursor style as pointer */
+}
+a {
+  text-decoration: none;
+  color: black;
 }

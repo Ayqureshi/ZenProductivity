@@ -1,44 +1,51 @@
+/* Consider putting this CSS into your Audio.css file */
+
 .audio-container {
     display: flex;            
     align-items: center;
     justify-content: center;   
     position: relative;
-    top:2vh;
+    top: 20px;
+}
+.audio-page{
     margin-bottom: 1000px;
 }
+
 .audio-text {
-    color:#00BF63;
-    font-size: 80px;
+    color: black;
+    font-size: 70px;
     font-weight: bold;
 }
-.audio-image{
-    width:80px;
+
+.audio-image {
+    width: 80px;
 }
 
 .search-container {
     display: flex;
     align-items: center;
+    position: relative;
     left: 20vw;
     top: 6vh;
-    position: relative;
+    margin-bottom: 8vh;
 }
 
 .input-wrapper {
-    position: absolute; 
+    position: relative; /* Change to relative to allow children positioning */
     display: flex;
     align-items: center;
-    background-color: #fff; /* Set this to the same color as your input field */
+    background-color: #fff;
     border: 2px solid #D9D9D9;
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 50px;
     width: 65vw;
 }
 
 .search-input {
-    flex-grow: 1;  /* This allows the input to take up as much space as possible within the container */
+    flex-grow: 1;
     padding: 8px;
-    border: none; /* Remove border because the wrapper now has the border */
-    height:6vh;
-    background-color: transparent; /* To inherit the background color from the wrapper */
+    border: none;
+    height: 6vh;
+    background-color: transparent;
 }
 
 .search-input:focus {
@@ -46,71 +53,67 @@
 }
 
 .search-image {
-    position: absolute;
-    right: 10px; /* Now your image will stick to the right inside the input field */
+    margin-left: 10px; /* Adjust margin instead of absolute positioning */
     height: 20px;
     width: 20px;
 }
 
-.career{
-    position: absolute;
-    height:200px;
-    width:90%;
-    background-color: #E47C42;
-    border-radius: 50px;
+/* Adjust these styles based on your React structure */
+.section {
+    position: relative;
+    width: 90%;
+    border-radius: 25px; /* Adjust the border-radius for rounded edges */
     left: 5%;
-    top:42vh;
 }
-.personal-development{
-    position: absolute;
-    height:200px;
-    width:90%;
-    background-color: #6860C7;
-    border-radius: 50px;
-    left: 5%;
-    top:56vh;
-}
-.entrepreneurship{
-    position: absolute;
-    height:200px;
-    width:90%;
-    background-color: #1E8C9B;
-    border-radius: 50px;
-    left: 5%;
-    top:70vh; /* Adjust this value as necessary */
+.section-container {
+    margin-bottom: 1000px;
 }
 
-
-.remote{
-    position: absolute;
-    height:300px;
-    width:90%;
-    background-color: #82108C;
-    border-radius: 50px;
+.career, .personal-development, .entrepreneurship, .remote {
+    height: 200px;
+    background-color: #6242E4; /* Update the respective colors */
+    border-radius: 25px; /* Adjust border-radius for each section */
     left: 5%;
-    top:84vh;
-   
-    
+    margin-top: 20px;
+    position: absolute;
+    width: 90%;
 }
 
-.text{
+.personal-development {
+    background-color: #4283E4; /* Adjust color for personal development */
+    top: 48vh;
+}
+
+.entrepreneurship {
+    background-color: #34734D; /* Adjust color for entrepreneurship */
+    top: 62vh;
+}
+
+.remote {
+    height: 500px;
+    background-color: #70BFA8; /* Adjust color for remote */
+    top: 76vh;
+    margin-top: 20px;
+    margin-bottom: 10000px;
+}
+
+.text {
     font-size: 50px;
     color: #FFFFFF;
-    display: flex;            
+    font-weight: bold;
     margin-top: 30px;
     margin-left: 50px;
-    font-weight: bold;
-}
-.text a {
-    color: inherit;       /* Take the color of the parent element */
-    text-decoration: none; /* Remove underline */
 }
 
-.zen-image{
+.text a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.zen-image {
     position: absolute;
-    top:-10px;
+    top: 350px;
     right: 0px;
     height: 140px;
     width: auto;
 }
-
