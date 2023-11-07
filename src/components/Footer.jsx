@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import instagram from '../images/instagram.png';
-import linkedin from '../images/linkedin.png';
-import facebook from '../images/facebook.png';
+import instagram from '../images/instagram.svg';
+import linkedin from '../images/linkedin-in.svg';
+import facebook from '../images/facebook-f.svg';
 
 function Footer() {
   return (
@@ -17,8 +17,8 @@ function Footer() {
         </div>
         <div id="customer-care">
           <p><strong>Customer Care</strong></p>
-          <p>Support Request</p>
-          <p>Contact us</p>
+          <p><a href="/contact" className="footer-text">Contact Us</a></p>
+          <p><a href="/support-request" className="footer-text">Support Request</a></p>
         </div>
         <div id="stewarship">
           <p><strong>Stewarship</strong></p>

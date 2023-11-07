@@ -34,6 +34,7 @@
   order: 2; /* Change the order to place the text sections on the right */
   margin-right: 90px; /* Add right margin for spacing */
   margin-bottom: 10px; /* Add bottom margin */
+  list-style: none;
 }
 
 #footer-img {
@@ -52,7 +53,7 @@
   width: 2px; /* Set the width */
   background-color: black; /* Black vertical line */
   position: absolute; /* Positioned absolutely */
-  right: 280px; /* Positioned 20px from the right side */
+  right: 450px; /* Positioned 20px from the right side */
   z-index: 10; /* Set a higher z-index */
 }
 
@@ -70,8 +71,13 @@
 }
 
 #social-icons img {
-  width: 3vw; /* Set the width of icons */
-  height: auto; /* Maintain the aspect ratio */
+  width: 2vw; /* Set the width of icons */
+  height: 80px; /* Maintain the aspect ratio */
   margin-right: 100px; /* Add right margin for spacing */
   cursor: pointer; /* Cursor style as pointer */
+}
+
+.footer-text {
+  text-decoration: none; /* Remove the underline */
+  color: black; /* Set the text color to black */
 }

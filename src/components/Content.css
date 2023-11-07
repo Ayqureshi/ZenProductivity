@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Inter', sans-serif;
-    font-size: 47px;
+    font-size: 49px;
     text-align: center;
     padding-top: 1px;
   
@@ -34,6 +34,7 @@
     position: relative;
     top: -80px;
     left: 300px;
+
   
     /* Responsive adjustments for smaller screens */
     @media (max-width: 768px) {
@@ -99,9 +100,9 @@
     height: 450px;
     background-color: #70BFA8;
     border-radius: 220px 220px 0 0;
-    margin-left: 800px;
+    margin-left: 900px;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 225px;
   
     /* Adjust semi-circle position for smaller screens */
     @media (max-width: 768px) {
@@ -128,7 +129,7 @@
   
   /* Green rectangle element */
   .green-rectangle {
-    width: 1000px; /* Set width */
+    width: 1200px; /* Set width */
     height: 120px; /* Set height */
     background:#70BFA8; /* Color of the rectangle */
     top: 1150px; /* Positioned 1150px from the top */
@@ -186,12 +187,13 @@
 .table-image{
     top: 1150px; /* Positioned 1150px from the top */
     right: 0px; /* Positioned at the right */
-    width: 425px; /* Set width */
+    width: 450px; /* Set width */
     height: 272px;
     border-radius: 80px 0 0 80px; /* Define border radius */
     box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
-    margin-left: 865px; /* Adjusted left margin */
+    margin-left: 815px; /* Adjusted left margin */
     margin-top: -290px; /* Adjusted top margin */
+
 }
 
 /* Styling for the image container */
@@ -210,9 +212,10 @@
     height: auto; /* Auto height */
     border-radius: 80px 80px 0 0; /* Define border radius */
     box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
-    margin-right: 50px; /* Right margin */
+    
     margin-top: 120px; /* Top margin */
     margin-left: -120px; /* Left margin */
+    right: 50px;
 }
 
 /* Styling for image card */
