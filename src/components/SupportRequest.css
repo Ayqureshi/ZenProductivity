@@ -7,9 +7,10 @@
 }
 
 .support-request-title{
+
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 15px;
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 2.5em;
 }
 
@@ -70,7 +71,7 @@
 }
   
 .form-box {
-    background-color: lightgray;
+    background-color: rgba(217, 217, 217, 0.53);
     border: 1px solid gray;
     padding: 8px;
     font-size: 16px;
@@ -78,7 +79,7 @@
 }
 
 .form-box-big {
-    background-color: lightgray;
+    background-color: rgba(217, 217, 217, 0.53);
     border: 1px solid gray;
     padding: 8px;
     font-size: 16px;
