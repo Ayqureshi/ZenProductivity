@@ -38,8 +38,8 @@ const ContactUs = () => {
         </div>
 
         <div className='body-content'>
-            <div className="img-container">
-                <img src="https://s2.r29static.com/bin/entry/4c1/x/1765183/image.png" alt="Your Image" />
+            <div className="img-container-contact">
+                <img src="https://s2.r29static.com/bin/entry/4c1/x/1765183/image.png" alt="Olaf" />
             </div>
 
             <div className='form'>

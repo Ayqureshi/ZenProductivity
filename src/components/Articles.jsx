@@ -1,13 +1,10 @@
 import React from 'react';
-//import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import './Articles.css';
-
-// Inside the Router component
+// import { Link } from 'react-router-dom';
 
 function Articles() {
   return (
     <div>
-      <h1> Article Page </h1>
+      <h1>Article Page</h1>
       <button>
         <a href="/article1">Article1</a>
       </button>
@@ -26,7 +23,6 @@ function Articles() {
       <button>
         <a href="/article6">Article6</a>
       </button>
-    
     </div>
   );
 }
@@ -54,5 +50,5 @@ const ImageColumn = () => {
 */
 //export default ImageColumn;
 
-
 export default Articles;
+

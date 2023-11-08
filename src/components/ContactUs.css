@@ -11,7 +11,7 @@
 .contact-title{
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 15px;
-    padding-top: 20px;
+    padding-top: 35px;
     font-size: 2.5em;
 }
 
@@ -20,6 +20,7 @@
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
     color: #A9A9A9;
+    margin-bottom: 25px;
 }
 
 .body-content {
@@ -31,7 +32,7 @@
     margin: 0 auto;
   }
 
-.img-container {
+.img-container-contact {
     width: 350px;
     height: 350px;
     border-radius: 10%;
@@ -45,7 +46,7 @@
     overflow: hidden;
 }
 
-.img-container img {
+.img-container-contact img {
     height: 100%;
     width: 100%;
     object-fit: cover;
