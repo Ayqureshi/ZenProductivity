@@ -1,13 +1,13 @@
-.app-container{
+.app-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
-}
-
-.content{
-    color:#00BF63;
-    font-size: 40px;
+  }
+  
+  /* Main content section */
+  .content {
+    color: #70bfa8; /* Text color */
     position: absolute;
     top: 240px;
     left: 90px;
@@ -15,30 +15,69 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
-}
-.content2{
+    font-size: 49px;
+    text-align: center;
+    padding-top: 1px;
+  
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      top: 200px;
+      font-size: 40px;
+    }
+  }
+  
+  /* Switch buttons container */
+  .switch-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    top: -80px;
+    left: 300px;
+
+  
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      top: -60px;
+      left: 150px;
+    }
+  }
+  
+  /* Second content section */
+  .content2 {
     width: 800px;
     position: absolute;
     top: 430px;
     left: 90px;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 25px;
-}
-
-
-.green-line {
-    height: 3px; 
-    width: 20%; 
-    background-color: #00BF63; 
-    position:absolute;
+  
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      width: 600px;
+      top: 450px;
+      font-size: 20px;
+    }
+  }
+  
+  /* Green line element */
+  .green-line {
+    height: 3px;
+    width: 20%;
+    background-color: #70bfa8;
+    position: absolute;
     top: 510px;
     left: 90px;
+  
+    /* Hide the green line on smaller screens */
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
-
-.content3 {
+  
+  /* Third content section */
+  .content3 {
     width: 800px;
     position: absolute;
     top: 530px;
@@ -46,126 +85,164 @@
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 25px;
-}
-
-.green-semi-circle {
-    width: 400px; /* Adjust the width of the semi-circle */
-    height: 450px; /* Adjust the height of the semi-circle */
-    background-color: #00BF63; /* Set the color to green or any desired color */
-    border-radius: 220px 220px 0 0; /* Make the top part rounded (half of width and height) */
-    margin-left: 1200px;
-    margin-top: 170px;
-}
-.edited-image {
+  
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      width: 600px;
+      top: 500px;
+      font-size: 20px;
+    }
+  }
+  
+  /* Green semi-circle element */
+  .green-semi-circle {
+    width: 300px;
+    height: 450px;
+    background-color: #70BFA8;
+    border-radius: 220px 220px 0 0;
+    margin-left: 900px;
+    margin-top: 50px;
+    margin-bottom: 225px;
+  
+    /* Adjust semi-circle position for smaller screens */
+    @media (max-width: 768px) {
+      width: 200px;
+      height: 300px;
+      margin-left: 600px;
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+  }
+  
+  /* Edited image element */
+  .edited-image {
     position: absolute;
     bottom: 0px;
     right: 0px;
     width: 200px;
+  
+    /* Adjust image size for smaller screens */
+    @media (max-width: 768px) {
+      width: 150px;
+    }
+  }
+  
+  /* Green rectangle element */
+  .green-rectangle {
+    width: 1200px; /* Set width */
+    height: 120px; /* Set height */
+    background:#70BFA8; /* Color of the rectangle */
+    top: 1150px; /* Positioned 1150px from the top */
+    left: 90px; /* Positioned 90px from the left */
+    border-radius: 50px 0 0 50px; /* Define border radius */
+    justify-content: center; /* Center justify content */
+    align-items: center; /* Center align items */
+    color: white; /* Text color */
+    font-size: 35px; /* Font size */
+    text-align: left; /* Left align the text */
+    padding-left: 100px; /* Left padding */
+    padding-top: 12px; /* Top padding */
+    line-height: 1; /* Line height */
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
+    margin-left: 50px; /* Adjusted left margin */
+    margin-top: 0px; /* Adjusted top margin */
 }
-.green-rectangle{
-    width: 1000px;
-    height: 200px;
-    background:#00BF63;
-    /* position: absolute; */
-    top: 1150px; /*Adjust the top position as needed */
-    left: 90px; /*Adjust the left position as needed */
-    border-radius: 50px 0 0 50px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 45px; /* Adjust the font size as needed */
-    text-align: left;
-    padding-left: 100px; 
-    padding-top: 28px;
-    line-height: 1;
-    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
-    margin-left: 100px;
-    margin-top: 0px;
 
-}
-
+/* Styling for a white line */
 .white-line{
-    width: 10px; 
-    height: 180px; 
-    background-color: white; 
-    /* position:absolute; */
-    top: 1180px;
-    left: 130px;
-    margin-left: -60px;
-    margin-top: -135px;
+    width: 10px; /* Set width */
+    height: 180px; /* Set height */
+    background-color: white; /* Color of the line */
+    top: 1180px; /* Positioned 1180px from the top */
+    left: 130px; /* Positioned 130px from the left */
+    margin-left: -60px; /* Adjusted left margin */
+    margin-top: -135px; /* Adjusted top margin */
 }
 
+/* Styling for a black line */
 .black-line{
-    width: 10px; 
-    height: 175px; 
-    background-color: #00BF63; 
-    top: 1350px;
-    left: 130px;
-    margin-left: 140px;
-    margin-top: 0px;
+    width: 10px; /* Set width */
+    height: 175px; /* Set height */
+    background-color: #70BFA8; /* Color of the line */
+    top: 1350px; /* Positioned 1350px from the top */
+    left: 130px; /* Positioned 130px from the left */
+    margin-left: 140px; /* Adjusted left margin */
+    margin-top: 0px; /* Adjusted top margin */
 }
 
+/* Fourth content section */
 .content4{
-    width: 625px;
-    /* position: absolute; */
-    top: 1400px;
-    left: 154px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 25px;
-    margin-left: 200px;
-    margin-top: -150px;
+    width: 625px; /* Set width */
+    top: 1300px; /* Positioned 1400px from the top */
+    left: 154px; /* Positioned 154px from the left */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 25px; /* Font size */
+    margin-left: 200px; /* Adjusted left margin */
+    margin-top: -155px; /* Adjusted top margin */
+    
 }
 
+/* Styling for a table image */
 .table-image{
-    /* position: absolute; */
-    top: 1150px;
-    right: 0px;
-    width: 650px;
-    border-radius: 80px 0 0 80px;
-    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
-    margin-left: 875px;
-    margin-top: -341px;
+    top: 1150px; /* Positioned 1150px from the top */
+    right: 0px; /* Positioned at the right */
+    width: 450px; /* Set width */
+    height: 272px;
+    border-radius: 80px 0 0 80px; /* Define border radius */
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
+    margin-left: 815px; /* Adjusted left margin */
+    margin-top: -290px; /* Adjusted top margin */
+
 }
 
+/* Styling for the image container */
 .image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Adjust alignment as needed */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the start */
     margin: 0 auto; /* Center horizontally */
-    max-width: 1200px; /* Set a maximum width for the container */
+    padding-left: 50px;
+    max-width: 1200px; /* Set maximum width */
 }
 
+/* Styling for different images */
 .goals-image, .learning-image, .network-image {
-    /* Remove margin-top and margin-left properties */
-    width: 400px;
-    height: auto;
-    border-radius: 80px 80px 0 0;
-    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6);
-    margin-right: 50px;
-    margin-top: 120px;
+    width: 350px; /* Set width */
+    height: auto; /* Auto height */
+    border-radius: 80px 80px 0 0; /* Define border radius */
+    box-shadow: -10px 10px 3px rgba(128, 128, 128, 0.6); /* Apply box shadow */
+    
+    margin-top: 120px; /* Top margin */
+    margin-left: -120px; /* Left margin */
+    right: 50px;
 }
 
+/* Styling for image card */
 .image-card {
-    text-align: center;
-    width: 420px;
-    margin-right: 20px; /* Add margin-right for spacing */
+    text-align: center; /* Center align the text */
+    width: 350px; /* Set width */
+    margin-right: 200px; /* Right margin for spacing */
 }
 
+/* Styling for networking, learning, and goals content */
 .networking-content, .learning-content, .goals-content {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 20px;
-    line-height: 1.2;
-    margin-top: 25px;
-    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 18px; /* Font size */
+    line-height: 1.2; /* Line height */
+    margin-top: 25px; /* Top margin */
+    margin-bottom: 100px; /* Bottom margin */
+    margin-left: -120px; /* Left margin */
 }
 
+/* Styling for networking, learning, and goals title */
 .networking-title, .learning-title, .goals-title{
-    color:#00BF63;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 30px;
-    line-height: 1.2;
-    margin-top: 30px;
+    color:#70BFA8; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    text-align: left; /* Left align the text */
+    font-size: 25px; /* Font size */
+    line-height: 1.2; /* Line height */
+    margin-top: 30px; /* Top margin */
+    margin-left: -120px; /* Left margin */
 }

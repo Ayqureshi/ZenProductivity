@@ -3,17 +3,20 @@ import React from 'react';
 import img1 from '../images/zenpro.png';
 import "./NavbarStyles.css";
 
+
 function Navbar(){
     return(
         <>
         <nav>
+        <a href="/">
             <img src={img1} alt="" />
+        </a>
             <div>
                 <ul id="navbar">
                     <li><a href="/">ABOUT US</a></li>
-                    <li><a href="/">COMMUNITY</a></li>
+                    <li><a href="community/">COMMUNITY</a></li>
                     <li><a href="/audio">AUDIO</a></li>
-                    <li><a href="/">ARTICLES</a></li>
+                    <li><a href="articles/">ARTICLES</a></li>
                 </ul>
             </div>
         </nav>

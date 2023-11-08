@@ -1,41 +1,37 @@
 import React from "react";
-import { Link } from 'react-router-dom'; // Import the Link component
 import './Content.css';
-import img2 from '../images/whitez.png';
-
+import Switch from "./Switch";
+import newHomePic from '../images/home_pic.png'; // Replace 'newImage.jpg' with the actual file name
 
 function Content() {
     return (
+        <div className="app-container">
+            <div className="content">
+                <h1>Work smarter.</h1>
+                <h1>Chill harder!</h1>
+                <div className="switch-buttons">
+                    <Switch rounded={true} />
+                </div>
+            </div>
 
-        <div className = "app-container">
-        <div className="content">
-            <h1>Work smarter.</h1>
-            <h1>Chill harder!</h1> {/* Escape the single quote */}
-        </div>
-        <div className="content2">
-            <p>Discover a world of growth and connection through Zen Productivity’s vibrant community, engaging audio interviews, and enriching articles.</p>
-        </div>
-        <div className="green-line"></div>
-        <div className="content3">
-            <p>Gain valuable insights from like-minded individuals, delve into thought-provoking interviews with experts, and explore a wealth of articles to fuel your personal and professional growth.</p>
-        <br></br>
-        Connect, learn, and thrive with our app&apos;s diverse resources at your fingertips. {/* Escape the single quote */}
-        </div>
-        <div className="green-semi-circle"></div>
-        <div><img src={img2} alt ="" className="edited-image"/></div>
-        <div className="green-rectangle">
-            <h2>
-            From college <br/> to career.
-            </h2>
-            <div className="white-line"></div>
-        </div>
-        {/* <div className="white-line"></div> */}
-        <div className="black-line"></div>
-        <div className="content4">
-            <p>Join other recent graduates as we help you leverage and translate your unique academic experience to maximize your practical skill set while you begin your professional journey.</p>
-        </div>
-        <div>
-            <img src="https://www.hepper.com/wp-content/uploads/2021/11/rsz_shutterstock_1765335680.jpg" alt ="temp" className="table-image"/>
+            <div className="green-semi-circle">
+                {/* Replaced the first green semi-circle with the new image */}
+                <img src={newHomePic} alt="" className="new-home-pic" />
+            </div>
+
+            <div className="green-rectangle">
+                <h2>
+                    From college <br /> to career.
+                </h2>
+                {/* <div className="white-line"></div> */}
+            </div>
+            {/* <div className="white-line"></div> */}
+            <div className="black-line"></div>
+            <div className="content4">
+                <p>Join other recent graduates as we help you leverage and translate your unique academic experience to maximize your practical skill set while you begin your professional journey.</p>
+            </div>
+            <div>
+                <img src="https://www.hepper.com/wp-content/uploads/2021/11/rsz_shutterstock_1765335680.jpg" alt="temp" className="table-image" />
         </div>
 
         <div className = "image-container">
@@ -63,8 +59,6 @@ function Content() {
                 </div>
             </div>
         </div>
-        <Link to="/contact">Go to Contact Page</Link> {/* Add this Link component */}
-
         </div>
 
     );

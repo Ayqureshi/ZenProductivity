@@ -5,6 +5,7 @@ nav{
     background-color: #70BFA8;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 80px;
 }
 
 #navbar{
@@ -17,6 +18,7 @@ nav{
     list-style: none;
     padding: 0 20px; 
     position: relative;
+    
 }
 
 #navbar li a{

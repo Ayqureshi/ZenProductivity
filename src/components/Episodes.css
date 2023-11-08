@@ -13,6 +13,7 @@
     transition: 0.3s background-color;
     margin-left: 100px;
     margin-top: 50px;
+    margin-bottom: 75px;
     &:hover {
         background-color: gray;
     }

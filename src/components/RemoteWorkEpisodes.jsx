@@ -1,20 +1,47 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './Episodes.css';
 import image from '../images/marie-curie.png';
 import forwardbutton from '../images/forwardbutton.png';
 import backwardbutton from '../images/backwardbutton.png';
 import playbutton from '../images/playbutton.webp';
 import pausebutton from '../images/pausebutton.png';
-import { useState, useRef} from "react";
+import {storage} from '../firebase'; // storage initialized in firebase.js
+import {ref, getDownloadURL} from "firebase/storage";
+import { useEffect, useState, useRef} from "react";
 
 
 function Episodes() {
     const navigate = useNavigate();
-    const audioURL = null;
+    const { episodeNumber } = useParams();
+    const episodeContent = [
+      { title: "Episode 1 - Remote Work", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.      " },
+      { title: "Episode 2 - Remote Work", description: "Remote Work: Description for episode 2" },
+      { title: "Episode 3 - Remote Work", description: "Remote Work: Description for episode 3" },
+      { title: "Episode 4 - Remote Work", description: "Remote Work: Description for episode 4" },
+      { title: "Episode 5 - Remote Work", description: "Remote Work: Description for episode 5" },
+      { title: "Episode 6 - Remote Work", description: "Remote Work: Description for episode 6" }
+    ];
+    const episodeNumberInt = parseInt(episodeNumber);
+    console.log("Episode Number: " + episodeNumber);
+    console.log("Episode Number Int: " + episodeNumberInt);
+    console.log("Episode Content Length: " + episodeContent.length);
+    const [audioURL, setAudioURL] = useState(null);
     const [audioStatus, changeAudioStatus] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const audioRef = useRef();
+    useEffect(() => {
+      const mp3Ref = ref(storage, 'audio/testing.mp3'); // get reference to where audio is stored
+  
+      getDownloadURL(mp3Ref)
+        .then((url) => {
+          setAudioURL(url); // if successful, update the state of audioURL
+        })
+        .catch((error) => {
+          console.error("Error downloading the MP3 file:", error);
+        });
+    }, []);
+
     const startAudio = () => {
         audioRef.current.play();
         changeAudioStatus(true);
@@ -27,7 +54,6 @@ function Episodes() {
     
       const handleForward30Seconds = () => {
         if (audioRef.current) {
-          console.log("forwarding??");
           console.log(audioRef.current.currentTime);
           audioRef.current.currentTime += 30;
         }
@@ -54,13 +80,13 @@ function Episodes() {
         <>
         <div id="title">
             <div className="episode1-title">
-                <h1>Episode 6 - Marie Curie’s Journey</h1>
+                <h1>{episodeContent[episodeNumberInt].title}</h1>
             </div>
         </div>
         <div id="individual-episode">
                 <img src={image} alt="Episode Description" className="microphone-image" />
                 <div className="text-box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>{episodeContent[episodeNumberInt].description}</p>
                 </div>
                 <div className="episode1-player">
                 <div>
@@ -104,9 +130,7 @@ function Episodes() {
                     onClick={handleForward30Seconds}
                     className="forward-button" 
                 />
-              
-
-
+            
                 </div>
         </div>
         <button className="back-button" onClick={() => navigate(-1)}>

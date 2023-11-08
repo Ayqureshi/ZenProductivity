@@ -62,7 +62,7 @@ const SignIn = () => {
           <h1 className="loginTitle">Log In</h1>
           <div className="formContainer">
             <div className="title">
-              Email
+              Email: 
             </div>
               <input
                 className="input"
@@ -74,7 +74,7 @@ const SignIn = () => {
           </div>
           <div className="formContainer">
               <div className="title">
-                Password
+                Password:
               </div>
             <input
               className="input"
