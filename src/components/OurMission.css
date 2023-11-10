@@ -18,13 +18,13 @@
     position: relative;
     width: 700px;
     height: 450px;
-    margin-left: 420px;
+    margin-left: 380px;
   }
   
   .img-mission {
-    width: 800px;
+    width: 700px;
     /* max-width: 800px; */
-    height: 800px;
+    height: 400px;
   }
   
   .img-facts {

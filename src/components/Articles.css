@@ -22,9 +22,11 @@
 .img-container {
   top:10vh;
   position: relative;
+  margin-left: 1px;
 }
 .img {
   width:1200px;
+  margin-left: -300px;
 }
 
 .body-container {
@@ -49,7 +51,7 @@
 }
 
 .button-style {
-  background-color: #00BF63;
+  background-color: #70BFA8;
   border-radius: 220px 220px 220px 220px;
   border: none;
   padding: 25px 40px 25px 40px;
