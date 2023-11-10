@@ -13,6 +13,7 @@ function Footer() {
           <p><strong>About US</strong></p>
           <p><a href="/ourmission" className="footer-text">Our Mission</a></p>
           <p><a href="/ourteam" className="footer-text">Our Team</a></p>
+          <p><a href="/aboutus" className="footer-text">About Us</a></p>
           <p>FAQs</p>
         </div>
         <div id="customer-care">

@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import Articles from './components/Articles';
 // import Loggingin from './components/loggingin';
 // import SignIn from './components/auth/SignIn';
+import AboutUs from './components/AboutUs';
 import Article1 from './components/Article1';
 import Article2 from './components/Article2';
 import Article3 from './components/Article3';
@@ -61,6 +62,7 @@ function App() {
             <Route path="/articles" element={<Articles />} />
             {/* <Route path="/loggingin" element={<Loggingin />} />
             <Route path="/signin" element={<SignIn />} /> */}
+            <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/careersuccess" element={<CareerSuccess />} />
             <Route path="/personalDevelopment" element={<PersonalDevelopment />} />
             <Route path="/entrepreneurship" element={<Entrepreneurship />} />

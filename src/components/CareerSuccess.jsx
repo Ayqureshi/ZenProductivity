@@ -7,12 +7,12 @@ import careersuccess from '../images/careerstories.png';
 import PropTypes from 'prop-types'; // Import PropTypes for validation
 import {storage} from '../firebase'; // storage initialized in firebase.js
 import {ref, getDownloadURL} from "firebase/storage";
-import {useEffect, useState, useRef} from "react";
+import {useState, useRef, useEffect} from "react";
 
 
 function CareerSuccess({
   episodes = [
-    { title: "Career Success Title 1", description: "Description for episode 1 bla bla bla lablawef" },
+    { title: "Career Success Title 1", description: "Description for episode 1" },
     { title: "Career Success Title 2", description: "Description for episode 2" },
     { title: "Career Success Title 3", description: "Description for episode 3" },
     { title: "Career Success Title 4", description: "Description for episode 4" },
@@ -21,70 +21,112 @@ function CareerSuccess({
   ]
 }) {
   const navigate = useNavigate();
-  const [audioURL, setAudioURL] = useState(null);
-  const [audioStatus, changeAudioStatus] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const audioRef = useRef();
 
+  const [loadedEpisodes, setLoadedEpisodes] = useState([]);
+  const [audioData, setAudioData] = useState(episodes.map(() => ({
+    audioURL: null,
+    audioStatus: false,
+    currentTime: 0,
+    audioRef: useRef(null),
+  })));
+
+  // Load all audio files when the component is mounted
   useEffect(() => {
-    const mp3Ref = ref(storage, 'audio/testing.mp3'); // get reference to where audio is stored
+    episodes.forEach((episode, index) => {
+      loadEpisodeAudio(index);
+    });
+  }, []);
+  
+  const loadEpisodeAudio = (index) => {
+    const mp3Ref = ref(storage, `audio/career_episode${index + 1}.mp3`);
 
     getDownloadURL(mp3Ref)
       .then((url) => {
-        setAudioURL(url); // if successful, update the state of audioURL
+        setAudioData((prevAudioData) =>
+          prevAudioData.map((item, i) =>
+            i === index ? { ...item, audioURL: url } : item
+          )
+        );
+        setLoadedEpisodes((prevLoadedEpisodes) => [...prevLoadedEpisodes, index]);
       })
       .catch((error) => {
-        console.error("Error downloading the MP3 file:", error);
+        console.error(`Error downloading the MP3 file for episode ${index + 1}:`, error);
       });
-  }, []);
-
-  const startAudio = () => {
-    audioRef.current.play();
-    changeAudioStatus(true);
   };
 
-  const pauseAudio = () => {
-    audioRef.current.pause();
-    changeAudioStatus(false);
-  };
+  const isEpisodeLoaded = (index) => loadedEpisodes.includes(index);
 
-  const handleForward30Seconds = () => {
-    if (audioRef.current) {
-      console.log("forwarding??");
-      console.log(audioRef.current.currentTime);
-      audioRef.current.currentTime += 30;
+  const startAudio = (index) => {
+    if (audioData[index].audioRef.current) {
+      audioData[index].audioRef.current.play();
+      setAudioData((prevAudioData) =>
+        prevAudioData.map((item, i) =>
+          i === index ? { ...item, audioStatus: true } : item
+        )
+      );
     }
   };
-
-  const handleBackward30Seconds = () => {
-    if (audioRef.current) {
-      console.log("going back??");
-      audioRef.current.currentTime -= 30;
+  
+  const pauseAudio = (index) => {
+    audioData[index].audioRef.current.pause();
+    setAudioData((prevAudioData) =>
+      prevAudioData.map((item, i) =>
+        i === index ? { ...item, audioStatus: false } : item
+      )
+    );
+  };
+  
+  const handleForward30Seconds = (index) => {
+    if (audioData[index].audioRef.current) {
+      audioData[index].audioRef.current.currentTime += 30;
     }
   };
-
-  const handleTimeUpdate = () => {
-    setCurrentTime(audioRef.current.currentTime);
+  
+  const handleBackward30Seconds = (index) => {
+    if (audioData[index].audioRef.current) {
+      audioData[index].audioRef.current.currentTime -= 30;
+    }
   };
-
-  const handleSliderChange = (e) => {
+  
+  const handleSliderChange = (e, index) => {
     const newTime = parseFloat(e.target.value);
-    audioRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
+    audioData[index].audioRef.current.currentTime = newTime;
+    setAudioData((prevAudioData) =>
+      prevAudioData.map((item, i) =>
+        i === index ? { ...item, currentTime: newTime } : item
+      )
+    );
   };
 
-
+  const handleTimeUpdate = (index) => {
+    console.log(`handleTimeUpdate: Index ${index}`);
+    if (audioData[index] && audioData[index].audioRef) {
+      const audioRef = audioData[index].audioRef.current;
+      if (audioRef) {
+        const currentTime = audioRef.currentTime;
+        setAudioData((prevAudioData) =>
+          prevAudioData.map((item, i) =>
+            i === index ? { ...item, currentTime } : item
+          )
+        );
+      } else {
+        console.log(`handleTimeUpdate: Invalid audioRef for index ${index}`);
+      }
+    } else {
+      console.log(`handleTimeUpdate: Invalid index or audioData for index ${index}`);
+    }
+  };  
+  
   return (
     <>
-        
-        <div className="text-section">
-          <h1>Career Success Stories</h1>
-        </div>
-        <img src={careersuccess} className="career-image"></img>
-      
+      <div className="text-section">
+        <h1>Career Success Stories</h1>
+      </div>
+      <img src={careersuccess} className="career-image" alt="Career Success" />
+
       <div className="episodes">
         <button className="back" onClick={() => navigate(-1)}>
-            ← All Podcasts
+          ← All Podcasts
         </button>
         <ul className="custom-list">
           {episodes.map((episode, index) => (
@@ -92,43 +134,53 @@ function CareerSuccess({
               <span className="number">{index + 1}.</span>
               <img src={img8} alt={`Description of Image ${index + 1}`} className="item-image" />
               <div className="audio-content">
-                <h3><Link to={`/episodes/${index}`}>{episode.title}</Link></h3>
+                <h3>
+                  <Link to={`/episodes/${index}`}>{episode.title}</Link>
+                </h3>
                 <p>{episode.description}</p>
                 <div>
-                  {audioURL ? (
-                    <audio ref={audioRef} src={audioURL} onTimeUpdate={handleTimeUpdate}>
-                    </audio>
+                  {isEpisodeLoaded(index) ? (
+                    <audio
+                      ref={audioData[index].audioRef}
+                      src={audioData[index].audioURL}
+                      onTimeUpdate={() => handleTimeUpdate(index)}
+                    ></audio>
                   ) : (
-                    'Loading...' // when getting source
+                    <button onClick={() => loadEpisodeAudio(index)}>Load Audio</button>
                   )}
                   <input
                     type="range"
                     min="0"
-                    max={audioRef.current ? audioRef.current.duration : 0}
+                    max={
+                      audioData[index].audioRef.current
+                        ? audioData[index].audioRef.current.duration
+                        : 0
+                    }
                     step="1"
-                    value={currentTime}
-                    onChange={handleSliderChange}
+                    value={audioData[index].currentTime}
+                    onChange={(e) => handleSliderChange(e, index)}
                   />
                 </div>
-                  <button onClick={handleForward30Seconds}>Forward 30 seconds</button>
-                  {/* adding buttons */}
-                  {audioStatus ? (
-                    <button onClick={pauseAudio}>pause</button>
-                  ) : (
-                    <button onClick={startAudio}>start</button>
-                  )}
-                <button onClick={handleBackward30Seconds}>Backward 30 seconds</button>
+                <button onClick={() => handleForward30Seconds(index)}>
+                  Forward 30 seconds
+                </button>
+                {audioData[index].audioStatus ? (
+                  <button onClick={() => pauseAudio(index)}>Pause</button>
+                ) : (
+                  <button onClick={() => startAudio(index)}>Start</button>
+                )}
+                <button onClick={() => handleBackward30Seconds(index)}>
+                  Backward 30 seconds
+                </button>
               </div>
             </li>
           ))}
         </ul>
       </div>
     </>
-    
   );
 }
 
-// Add PropTypes validation
 CareerSuccess.propTypes = {
   backgroundColor: PropTypes.string,
   title: PropTypes.string,
