@@ -1,9 +1,12 @@
 import React from "react";
 import CareerSuccess from './CareerSuccess';
 import { Link } from 'react-router-dom';
+import './CareerSuccess.css';
+
+// import img from '../images/personaldevelopment.png';
 
 function PersonalDevelopment() {
-    const personalDevelopmentEpisodes = [
+    const personalDevelopmentTitle = [
         { title: "Personal Development Title 1", description: "Personal Development for episode 1" },
         { title: "Personal Development Title 2", description: "Personal Development for episode 2" },
         { title: "Personal Development Title 3", description: "Personal Development for episode 3" },
@@ -12,15 +15,21 @@ function PersonalDevelopment() {
         { title: "Personal Development Title 6", description: "Personal Development for episode 6" },
         // ... add more episodes as needed
     ];
+    
+    //const customTextSectionClass = "new-text-section";
+    // const customTextSectionContent = <h1>Personal Development</h1>;
+    return (
+        <div>
+            <CareerSuccess
+                episodes={personalDevelopmentTitle.map((episode, index) => ({
+                    ...episode,
+                    title: <Link to={`/personalDevelopmentEpisode/${index}`}>{episode.title}</Link>
+                }))}
+                
+            />
 
-    return <CareerSuccess backgroundColor="#6860C7" 
-    title="PERSONAL DEVELOPMENT"
-    description="Conversations with experts on self-improvement, goal setting, and personal growth."
-    episodes={personalDevelopmentEpisodes.map(episode => ({
-        ...episode,
-        title: <Link to={`/episodes/${episode.title.replace(/ /g, '-')}`}>{episode.title}</Link>
-    }))}
-    />
+        </div>
+    );
     
 }
 

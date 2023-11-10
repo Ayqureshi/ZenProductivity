@@ -16,9 +16,9 @@ function RemoteWork() {
     return <CareerSuccess backgroundColor="#82108C" 
     title="REMOTE WORK & DIGITAL NOMADISM"
     description="Inspiring interviews with professionals who have achieved remarkable career success."
-    episodes={remoteWorkEpisodes.map(episode => ({
+    episodes={remoteWorkEpisodes.map((episode, index) => ({
         ...episode,
-        title: <Link to={`/episodes/${episode.title.replace(/ /g, '-')}`}>{episode.title}</Link>
+        title: <Link to={`/RemoteWorkEpisode/${index}`}>{episode.title}</Link>
     }))}
     />
 }
