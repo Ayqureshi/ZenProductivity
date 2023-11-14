@@ -15,15 +15,17 @@ function Episodes() {
     const navigate = useNavigate();
     const { episodeNumber } = useParams();
     const episodeContent = [
-      { title: "Episode 1", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.      " },
-      { title: "Episode 2", description: "Description for episode 2" },
-      { title: "Episode 3", description: "Description for episode 3" },
-      { title: "Episode 4", description: "Description for episode 4" },
-      { title: "Episode 5", description: "Description for episode 5" },
-      { title: "Episode 6", description: "Description for episode 6" }
+      { title: "Episode 1 - Personal Development", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.      " },
+      { title: "Episode 2 - Personal Development", description: "Personal Development: Description for episode 2" },
+      { title: "Episode 3 - Personal Development", description: "Personal Development: Description for episode 3" },
+      { title: "Episode 4 - Personal Development", description: "Personal Development: Description for episode 4" },
+      { title: "Episode 5 - Personal Development", description: "Personal Development: Description for episode 5" },
+      { title: "Episode 6 - Personal Development", description: "Personal Development: Description for episode 6" }
     ];
     const episodeNumberInt = parseInt(episodeNumber);
     console.log("Episode Number: " + episodeNumber);
+    console.log("Episode Number Int: " + episodeNumberInt);
+    console.log("Episode Content Length: " + episodeContent.length);
     const [audioURL, setAudioURL] = useState(null);
     const [audioStatus, changeAudioStatus] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);

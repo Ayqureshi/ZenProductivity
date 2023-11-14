@@ -38,7 +38,7 @@ const SignUp = () => {
           <h1 className="loginTitle">Sign Up</h1>
           <div className="formContainer">
             <div className="title">
-              Email
+              Email: 
             </div>
               <input
                 className="input"
@@ -50,7 +50,7 @@ const SignUp = () => {
           </div>
           <div className="formContainer">
               <div className="title">
-                Password
+                Password: 
               </div>
             <input
               className="input"
@@ -84,7 +84,7 @@ const SignUp = () => {
           </div>
         </form>
         <div className="signUpRedirectContainer">
-          <span>Already have an account? <Link to="/loggingin" className="signUpRedirectText">Log In</Link></span>
+          <span>Already have an account? <Link to="/signin" className="signUpRedirectText">Log In</Link></span>
         </div>
         </div>
 

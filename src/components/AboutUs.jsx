@@ -37,7 +37,7 @@ const AboutUs = () => {
             <div className='fifth-section'>
                 <div className='bubble-container'>
                     <div className='about-us-text'>
-                        Insert text here...
+                        Which is why we created this platform to help people go through what we have experieced. We hope you find some use out of this platform and learn something new while exploring.
                     </div>
                 </div>
             </div>

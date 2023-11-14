@@ -1,7 +1,12 @@
 /* Added this css file because there is a lot of stuff in Articles.css but don't know what it does? */
+.articles-page{
+    margin-bottom: 120px;
+}
+
 .article-header{
     margin-top: 35px;
     font-size: 2.5em;
+    
 }
 
 .searchbar-container {
@@ -83,6 +88,7 @@
 .article-image-container {
   position: relative;
   border-radius: 15%;
+  margin-top: 30px;
   width: 475px;
   height: 300px;
   margin-right: 50px;
@@ -92,7 +98,7 @@
     position: relative;
     border-radius: 15%;
     width: 425px;
-    height: 120px;
+    height: 180px;
     margin-bottom: 25px;
 }
 
@@ -100,8 +106,8 @@
     position: relative;
     border-radius: 15%;
     width: 280px;
-    height: 100px;
-    margin-bottom: 25px;
+    height: 180px;
+    margin-bottom: 250px;
 }
 
 .overlay {

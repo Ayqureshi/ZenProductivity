@@ -10,6 +10,7 @@ import article2img from './pictures/articles_pic_2.jpg';
 function Articles() {
   return (
     <div>
+      <div className="articles-page">
       <h1 className='article-header'> Article Page </h1>
 
       <div className="searchbar-container">
@@ -92,6 +93,7 @@ function Articles() {
         </div>
       </div>
       </div>
+    </div>
     </div>
   );
 }
