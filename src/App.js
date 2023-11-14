@@ -14,6 +14,7 @@ import RemoteWork from './components/RemoteWork';
 import Episodes from './components/Episodes';
 import Footer from "./components/Footer";
 // import Community from "./components/Community";
+import AddPostPage from './components/community/AddCommunityPost';
 import Articles from './components/Articles';
 // import Loggingin from './components/loggingin';
 // import SignIn from './components/auth/SignIn';
@@ -58,6 +59,7 @@ function App() {
             <Route path="/ourmission" element={<OurMission />} />
             <Route path="/ourteam" element={<OurTeam />} />
             {/* <Route path="/community" element={<Community />} /> */}
+            <Route path="/community/addPost" element={<AddPostPage />} />
             <Route path="/articles" element={<Articles />} />
             {/* <Route path="/loggingin" element={<Loggingin />} />
             <Route path="/signin" element={<SignIn />} /> */}
