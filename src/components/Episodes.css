@@ -115,3 +115,66 @@
 .episode1-footer {
     bottom: -10000px;
   }
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .back-button {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-left: 10%; /* Center the button */
+        margin-right: 10%; /* Center the button */
+    }
+
+    #individual-episode {
+        width: 90%; /* Reduce width for smaller screens */
+        height: auto; /* Adjust height based on content */
+    }
+
+    #title {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .microphone-image {
+        margin-left: auto; /* Center the image */
+        margin-right: auto; /* Center the image */
+        width: 70%; /* Adjust width for smaller screens */
+        height: auto; /* Keep the aspect ratio */
+    }
+
+    .text-box {
+        width: 90%; /* Adjust width */
+        margin: 0 auto; /* Center in the available space */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .episode1-player {
+        margin-top: 20px; /* Adjust top margin */
+        margin-left: 0; /* Reset left margin */
+        margin-right: 0; /* Reset right margin */
+        align-items: center; /* Center the items inside the player */
+        justify-content: center; /* Center the player itself */
+        width: 100%; /* Full width on small screens */
+    }
+
+    .progress-bar {
+        margin-left: 0; /* Align with parent's left edge */
+        width: 90%; /* Adjust progress bar width */
+        margin: 0 auto; /* Center the progress bar */
+    }
+
+    /* Adjust buttons for easier touch */
+    .play-button, .pause-button, .backward-button {
+        width: 40px; /* Increase size for easier touch interaction */
+        margin: 5px; /* Adjust spacing */
+    }
+
+    .forward-button {
+        width: auto; /* Increase size for easier touch interaction */
+        height: 27px;
+        margin-bottom: 10px;
+        margin-left: 9px;
+    }
+
+    .episode1-footer {
+        bottom: auto; /* Adjust footer position */
+    }
+}

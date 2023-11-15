@@ -50,7 +50,7 @@ const SignUp = () => {
           </div>
           <div className="formContainer">
               <div className="title">
-                Password: 
+                <p>Password:</p>
               </div>
             <input
               className="input"

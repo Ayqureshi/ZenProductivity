@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div id="stewarship">
           <p><strong>Stewarship</strong></p>
-          <p>Privacy Policy & Data Security</p>
+          <p><a href="/privacy" className="footer-text">Privacy Policy & Data Security</a></p>
           <p>Community Service</p>
         </div>
         <div id="vertical-line"></div>

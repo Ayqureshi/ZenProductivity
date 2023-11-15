@@ -31,7 +31,7 @@ import OurMission from "./components/OurMission";
 import OurTeam from "./components/OurTeam";
 import AboutUs from "./components/AboutUs";
 import FAQ from "./components/FAQ";
-
+import Privacy from "./components/Privacy";
 
 
 
@@ -75,6 +75,7 @@ function App() {
             <Route path="/entrepreneurship" element={<Entrepreneurship />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/support-request" element={<SupportRequest />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="/remoteWork" element={<RemoteWork />} />
             <Route path="/episodes/:episodeNumber" element={<Episodes />} />
             <Route path="/personalDevelopmentEpisode/:episodeNumber" element={<PersonalDevelopmentEpisodes />} />

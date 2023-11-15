@@ -101,4 +101,54 @@
     color: red;
 }
 
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.5em; /* Smaller font size for better readability */
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .contact-text {
+        font-size: 1em; /* Adjust font size for mobile */
+    }
+
+    .body-content {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center align items */
+        padding: 0 20px; /* Add padding on the sides */
+    }
+
+    .img-container-contact {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-top: 20px;
+        margin-left: 0; /* Center the image container */
+        margin-right: 0; /* Center the image container */
+    }
+
+    .img-container-contact img {
+        border-radius: 5%; /* Adjust border radius */
+    }
+
+    .form {
+        padding-top: 20px;
+        padding-right: 0; /* Remove right padding */
+        align-items: center; /* Center align form items */
+        width: 100%; /* Full width on small screens */
+    }
+
+    .input-container {
+        width: 90%; /* Adjust input container width */
+    }
+
+    .circular-button {
+        width: 80%; /* Increase button width */
+        margin: 0 auto; /* Center the button */
+    }
+
+    .button-container {
+        justify-content: center; /* Center the button container */
+        width: 120px;
+    }
+}
   

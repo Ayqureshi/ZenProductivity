@@ -1,0 +1,61 @@
+.collapse-button {
+    font-size: 24px;
+    color: white;
+    background-color: #0097B2;
+    padding: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-color: #0097B2;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.button-text {
+    border-radius: 1rem;
+    border-color: black;
+    width: 60vh;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subHead-text {
+    padding-bottom: 5vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.collapse-text {
+    width: 70vh;
+    text-align: left;
+    margin-left: 25%;
+    
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .collapse-button {
+        font-size: 18px; /* Smaller font size for mobile */
+        padding: 3vh; /* Adjust padding */
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .button-text {
+        width: 80vw; /* Adjust width to viewport width */
+        margin: 0 auto; /* Center the button */
+    }
+
+    .subHead-text {
+        padding-bottom: 3vh;
+        padding-left: 5vh; /* Reduced padding for smaller screens */
+        padding-right: 5vh; /* Reduced padding for smaller screens */
+        font-size: 16px; /* Adjust font size if necessary */
+    }
+
+    .collapse-text {
+        width: 80vw; /* Adjust width to viewport width */
+        margin-left: 0; /* Reset margin */
+        text-align: left;
+    }
+}

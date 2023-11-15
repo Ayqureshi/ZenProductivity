@@ -8,11 +8,11 @@ const AboutUs = () => {
         <div className='about-us-container'>
             <h1 className='about-us-title'>About Us</h1>
             <div className='first-section'>
-                <div className='about-us-img'>
+                <div className='about-us-img sm-col-12'>
                     <img src="https://media.tenor.com/rPYosYmsvokAAAAC/work-homework.gif" alt="working picture" />
                 </div>
                 <div className='bubble-container'>
-                    <div className='about-us-text'>
+                    <div className='about-us-text sm-col-12'>
                     We have all been there. Whether it is an impolite team leader, an impossible to complete task, or an existential crisis--work is stressful.
                     </div>
                 </div>

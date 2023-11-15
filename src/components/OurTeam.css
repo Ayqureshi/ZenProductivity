@@ -3,7 +3,7 @@
   text-align: center;
   justify-content: center;          
   position: relative;
-  top:5vh;
+  top: 5vh;
 }
 
 .title-text {
@@ -28,7 +28,8 @@
   object-fit: cover; 
   border-radius: 20%; 
 }
-.row1 {
+
+.row1, .row2 {
   margin-top: 100px;
   margin-right: 200px;
   margin-left: 200px;
@@ -38,9 +39,35 @@
 
 .row2 {
   margin-top: 50px;
-  margin-right: 200px;
-  margin-left: 200px;
   margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 1.5rem; /* Smaller font size for better readability */
+  }
+
+  .pfp-container {
+    width: 200px; /* Smaller container size */
+    height: 200px; /* Smaller container size */
+    margin-top: 30px;
+  }
+
+  .row1 {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center align the items */
+    margin-right: 30px; /* Reduce margin for smaller screens */
+    margin-left: 30px; /* Reduce margin for smaller screens */
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .row2 {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center align the items */
+    margin-top: 0px;
+    margin-right: 30px; /* Reduce margin for smaller screens */
+    margin-left: 30px; /* Reduce margin for smaller screens */
+  }
 }

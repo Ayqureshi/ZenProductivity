@@ -1,10 +1,10 @@
-.about-us-title{
+.about-us-title {
     font-size: 2.5em;
     margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.first-section{
+.first-section {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -12,13 +12,13 @@
     margin-top: 30px;
 }
 
-.about-us-img{
+.about-us-img {
     width: 350px;
     height: 350px;
     margin-right: 70px;
 }
 
-.about-us-img img{
+.about-us-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -26,7 +26,7 @@
     border-radius: 15%;
 }
 
-.bubble-container{
+.bubble-container {
     border-radius: 15%;
     background-color: #b4dfe0;
     width: 500px;
@@ -35,68 +35,101 @@
     justify-content: center;
     align-items: center;
     margin-top: 25px;
-    /* margin-left: 70px; */
 }
 
-.arrow-container{
+.arrow-container {
     width: 200px;
     height: 200px;
 }
 
-.arrow-container img{
+.arrow-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 
-.arrow-container2{
+.arrow-container2 {
     width: 150px;
     height: 150px;
 }
 
-.arrow-container2 img{
+.arrow-container2 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 
-.about-us-text{
+.about-us-text {
     font-size: 1.5em;
     color: #FFF;
 }
 
-.third-section{
-    justify-content: center;
-    margin-left: 180px;
+.third-section {
+    display: flex;
+    justify-content: left;
+    margin-left: 15%;
 }
 
-.fifth-section .bubble-container{
-    margin-left: 680px;
-}
-
-.second-section .arrow-container{
-    margin-left: 500px;
-}
-
-.about-us-container{
+.about-us-container {
     margin-left: 30px;
     margin-right: 30px;
-
 }
-.second-section{
+
+.second-section {
     width: 200px;
     height: 200px;
+    margin-left: 36%;
 }
 
-.fourth-section{
+.fourth-section {
     margin-top: 50px;
     width: 200px;
     height: 200px;
-    margin-left: 600px;
+    margin-left: 40%;
 }
 
-.fifth-section{
+.fifth-section {
+    display: flex;
+    justify-content: right;
+    margin-right: 15%;
     margin-bottom: 30px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-img {
+        width: 80%; /* Adjusted for smaller screens */
+        height: auto; /* Keep aspect ratio */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .bubble-container {
+        width: 80%; /* Adjusted for smaller screens */
+        height: 130px; /* Height adjusts to content */
+        margin-top: 15px; /* Reduced margin-top */
+    }
+
+    .third-section, .fifth-section {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .second-section, .fourth-section {
+        margin-left: auto; /* Centered */
+        margin-right: auto; /* Centered */
+        width: 50%; /* Adjust width */
+        height: auto; /* Adjust height */
+    }
+
+    .about-us-text {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
 }

@@ -35,6 +35,10 @@
   text-align: left;
 }
 
+.title p{
+  margin-left: 40px;
+}
+
 .loginButtonContainer{
   width:100%;
   padding-top: 10px;
@@ -87,4 +91,11 @@
   background:#fff; 
   padding:0 10px; 
   color: rgb(182, 182, 182);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .title p{
+    margin-left: 0px;
+  }
 }
