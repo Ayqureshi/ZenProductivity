@@ -29,6 +29,8 @@ import Article5 from './components/Article5';
 import Article6 from './components/Article6';
 import OurMission from "./components/OurMission";
 import OurTeam from "./components/OurTeam";
+import AboutUs from "./components/AboutUs";
+import FAQ from "./components/FAQ";
 
 
 
@@ -61,6 +63,8 @@ function App() {
             <Route path ="/article6" element={<Article6 />} />
             <Route path="/ourmission" element={<OurMission />} />
             <Route path="/ourteam" element={<OurTeam />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/faq" element={<FAQ />} />
             {/* <Route path="/community" element={<Community />} /> */}
             <Route path="/articles" element={<Articles />} />
             {/* <Route path="/loggingin" element={<Loggingin />} /> */}
