@@ -7,12 +7,12 @@ import './CareerSuccess.css';
 
 function PersonalDevelopment() {
     const personalDevelopmentTitle = [
-        { title: "Personal Development Title 1", description: "Personal Development for episode 1" },
-        { title: "Personal Development Title 2", description: "Personal Development for episode 2" },
-        { title: "Personal Development Title 3", description: "Personal Development for episode 3" },
-        { title: "Personal Development Title 4", description: "Personal Development for episode 4" },
-        { title: "Personal Development Title 5", description: "Personal Development for episode 5" },
-        { title: "Personal Development Title 6", description: "Personal Development for episode 6" },
+        { title: "Sociologist Sheds Light on Mental Health", description: "Ameen talks to Dr. Tracy Bower on her experiences of mental health and her initiatives at Steelcase" },
+        // { title: "Personal Development Title 2", description: "Personal Development for episode 2" },
+        // { title: "Personal Development Title 3", description: "Personal Development for episode 3" },
+        // { title: "Personal Development Title 4", description: "Personal Development for episode 4" },
+        // { title: "Personal Development Title 5", description: "Personal Development for episode 5" },
+        // { title: "Personal Development Title 6", description: "Personal Development for episode 6" },
         // ... add more episodes as needed
     ];
     

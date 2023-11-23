@@ -15,7 +15,7 @@ function Episodes() {
     const navigate = useNavigate();
     const { episodeNumber } = useParams();
     const episodeContent = [
-      { title: "Episode 1 - Personal Development", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.      " },
+      { title: "Episode 1 - Personal Development", description: "Dr. Tracy Bower holds a PHD in Sociology from MSU and is currently a VP at Steelcase for workplace insights. She is also a contributor to Forbes and Newsroom and talks frequently about mental health in the workplace. She shared her insights on what makes someone stand out and how to balance both your career and mental health easily. She also shared some advice when making a career decision and most importantly made it clear that you are your biggest" },
       { title: "Episode 2 - Personal Development", description: "Personal Development: Description for episode 2" },
       { title: "Episode 3 - Personal Development", description: "Personal Development: Description for episode 3" },
       { title: "Episode 4 - Personal Development", description: "Personal Development: Description for episode 4" },

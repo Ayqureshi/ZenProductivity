@@ -15,7 +15,7 @@ function Episodes() {
     const navigate = useNavigate();
     const { episodeNumber } = useParams();
     const episodeContent = [
-      { title: "Episode 1 - Remote Work", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.      " },
+      { title: "Episode 1 - Remote Work", description: "Ameen spends time talking to a VP of People Strategy at Western Digital to see if she is on board with Remote Work and actively encourages it with her employees. She also helped identify times when you can tell if you need to take a trip or simply step away from your computer while at work" },
       { title: "Episode 2 - Remote Work", description: "Remote Work: Description for episode 2" },
       { title: "Episode 3 - Remote Work", description: "Remote Work: Description for episode 3" },
       { title: "Episode 4 - Remote Work", description: "Remote Work: Description for episode 4" },

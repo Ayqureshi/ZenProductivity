@@ -11,12 +11,12 @@ function CareerSuccess({
   customTextSectionClass = "text-section",
   customTextSectionContent = <h1>Career Success Stories</h1>,
   episodes = [
-    { title: "Ep. 1 - Zuck on Harvard", description: "Mark Zuckerberg talks about how he started Facebook. And yes, he adamantly states that the Winklevoss twins are a fraud." },
-    { title: "Ep. 2 - Jeff Bezos Plotting World Domination", description: "Streaming? Cloud computing? Online retailer? Groceries? What else does Bezos have in mind? The grind never stops..." },
-    { title: "Ep. 3 - Bill Gates Dealing With Divorce In the Public Eye", description: "The tea everyone’s been waiting for. Why did Bill cheat on Melinda?" },
-    { title: "Career Success Title 4", description: "Description for episode 4" },
-    { title: "Career Success Title 5", description: "Description for episode 5" },
-    { title: "Career Success Title 6", description: "Description for episode 6" }
+    { title: "Ep. 1 - Thoughts on Burnout from a VP", description: "Ameen talks to one of VPs at Western Digital on his Career Success Story and how he was able to make the best out of his unideal situation" },
+    // { title: "Ep. 2 - Jeff Bezos Plotting World Domination", description: "Streaming? Cloud computing? Online retailer? Groceries? What else does Bezos have in mind? The grind never stops..." },
+    // { title: "Ep. 3 - Bill Gates Dealing With Divorce In the Public Eye", description: "The tea everyone’s been waiting for. Why did Bill cheat on Melinda?" },
+    // { title: "Career Success Title 4", description: "Description for episode 4" },
+    // { title: "Career Success Title 5", description: "Description for episode 5" },
+    // { title: "Career Success Title 6", description: "Description for episode 6" }
   ]
 }) {
   const navigate = useNavigate();

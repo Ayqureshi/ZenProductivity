@@ -3,12 +3,12 @@ import CareerSuccess from './CareerSuccess';
 import { Link } from 'react-router-dom';
 function Entrepreneurship() {
     const entrepreneurshipTitle = [
-        { title: "Entrepreneurship Title 1", description: "Entrepreneurship for episode 1" },
-        { title: "Entrepreneurship Title 2", description: "Entrepreneurship for episode 2" },
-        { title: "Entrepreneurship Title 3", description: "Entrepreneurship for episode 3" },
-        { title: "Entrepreneurship Title 4", description: "Entrepreneurship for episode 4" },
-        { title: "Entrepreneurship Title 5", description: "Entrepreneurship for episode 5" },
-        { title: "Entrepreneurship Title 6", description: "Entrepreneurship for episode 6" },
+        { title: "Reflections of an IYA Professor", description: "Interview with Professor Chris Swain on how he balanced his mental health and his startup" },
+        // { title: "Entrepreneurship Title 2", description: "Entrepreneurship for episode 2" },
+        // { title: "Entrepreneurship Title 3", description: "Entrepreneurship for episode 3" },
+        // { title: "Entrepreneurship Title 4", description: "Entrepreneurship for episode 4" },
+        // { title: "Entrepreneurship Title 5", description: "Entrepreneurship for episode 5" },
+        // { title: "Entrepreneurship Title 6", description: "Entrepreneurship for episode 6" },
         // ... add more episodes as needed
     ];
 

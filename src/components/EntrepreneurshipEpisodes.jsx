@@ -15,7 +15,7 @@ function Episodes() {
     const navigate = useNavigate();
     const { episodeNumber } = useParams();
     const episodeContent = [
-      { title: "Episode 1 - Entrepreneurship", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.      " },
+      { title: "Episode 1 - Entrepreneurship", description: "Interview with Professor Chris Swain on how he balanced his mental health and his startup" },
       { title: "Episode 2 - Entrepreneurship", description: "Entrepreneurship: Description for episode 2" },
       { title: "Episode 3 - Entrepreneurship", description: "Entrepreneurship: Description for episode 3" },
       { title: "Episode 4 - Entrepreneurship", description: "Entrepreneurship: Description for episode 4" },
