@@ -31,7 +31,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/app.js"
+        "destination": "/index.html"
       }
     ]
   },

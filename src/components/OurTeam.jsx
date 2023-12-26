@@ -3,6 +3,7 @@ import "./OurTeam.css";
 import Ameen from '../images/IMG_8056.jpg';
 import Jamie from '../images/IMG_7345.jpg';
 import Yingxin from '../images/yingxin.JPG';
+import Mohammed from '../images/mohammed.png';
 import Kathy from '../images/kathy.jpeg';
 import Azam from '../images/azam.png';
 import Esther from '../images/esther.png';
@@ -43,6 +44,13 @@ function OurTeam() {
                         <img src={Yingxin} alt="" className="img-pfp"/>
                     </div>
                     <h2>Yingxin Wu</h2>
+                    <p>Back-End Developer</p>
+                </div>
+                <div className='pfp-outer-container'>
+                    <div className='pfp-container'>
+                        <img src={Mohammed} alt="" className="img-pfp"/>
+                    </div>
+                    <h2>Mohammed Alamgir</h2>
                     <p>Back-End Developer</p>
                 </div>
                 <div className='pfp-outer-container'>
