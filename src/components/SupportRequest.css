@@ -135,3 +135,54 @@
 .red-asterisk{
     color: red;
 }
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .outer-body, .main-body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .support-request-title {
+        font-size: 1.5em; /* Smaller font size for better readability */
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .description, .help-text {
+        font-size: 1em; /* Adjust font size for mobile */
+    }
+
+    .main-body {
+        flex-direction: column; /* Stack the elements vertically */
+    }
+
+    .support-form, .pic-container {
+        width: 100%; /* Full width on small screens */
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .input-field, .input-field-big {
+        width: 90%; /* Adjust input field width */
+    }
+
+    .support-request-button-container {
+        text-align: center; /* Center-align the button */
+    }
+
+    .support-request-button {
+        width: 80%; /* Increase button width */
+        margin-right: 36px;
+    }
+
+    .pic-container {
+        margin-right: 36px;
+    }
+
+    .pic-container img {
+        border-radius: 5%; /* Adjust border radius */
+        margin-right: 32px;
+    }
+}

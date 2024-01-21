@@ -5,7 +5,8 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "google"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -15,5 +16,10 @@ module.exports = {
         "react"
     ],
     "rules": {
+        // Disable all rules
+        "indent": "off",
+        "quotes": "off",
+        "object-curly-spacing": "off",
+        // Add more rules here...
     }
 }

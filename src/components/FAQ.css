@@ -1,0 +1,92 @@
+.App {
+  font-family: sans-serif;
+}
+
+.tit-text {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-page {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-left: 25%;
+  max-width: 800px; /* Adjusted maximum width */
+  padding: 20px;
+}
+
+.faq-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.question-bubble {
+  background-color: #D9D9D9;
+  padding: 20px; /* Increased padding */
+  border-radius: 20px; /* Increased border-radius */
+  width: 300px; /* Increased width */
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: -150px; /* Adjusted margin */
+  display: inline-block;
+}
+
+.question-bubble:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent; /* Adjusted border size */
+  border-bottom: 15px solid transparent; /* Adjusted border size */
+  border-right: 15px solid #D9D9D9; /* Adjusted border size and color */
+  transform: translate(0, -50%);
+}
+
+.answer-bubble {
+  background-color: #9796DB;
+  padding: 20px; /* Increased padding */
+  border-radius: 20px; /* Increased border-radius */
+  width: 50%; /* Increased width */
+  margin-left: 60%; /* Adjusted margin */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .tit-text {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .faq-page {
+    margin-left: 10%;
+    width: 80%; /* Adjust width for mobile */
+  }
+
+  .question-bubble {
+    width: 100%; /* Full width for mobile */
+    margin-left: 0; /* Center align for mobile */
+  }
+
+  .question-bubble:after {
+    width: 0;
+    height: 0;
+  }
+
+  .answer-bubble {
+    width: 100%; /* Full width for mobile */
+    margin-left: 0; /* Center align for mobile */
+  }
+}

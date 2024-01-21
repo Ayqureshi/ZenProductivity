@@ -13,7 +13,7 @@ function Footer() {
           <p><strong>About US</strong></p>
           <p><a href="/ourmission" className="footer-text">Our Mission</a></p>
           <p><a href="/ourteam" className="footer-text">Our Team</a></p>
-          <p>FAQs</p>
+          <p><a href="/faq" className="footer-text">FAQ</a></p>
         </div>
         <div id="customer-care">
           <p><strong>Customer Care</strong></p>
@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div id="stewarship">
           <p><strong>Stewarship</strong></p>
-          <p>Privacy Policy & Data Security</p>
+          <p><a href="/privacy" className="footer-text">Privacy Policy & Data Security</a></p>
           <p>Community Service</p>
         </div>
         <div id="vertical-line"></div>

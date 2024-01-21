@@ -28,10 +28,15 @@
   box-sizing: border-box;
 }
 .title{
-  margin-bottom: 8px;
+  margin-bottom: 40px;
+  margin-left: -700px;
   font-size: 20px;
   font-weight:bold;
   text-align: left;
+}
+
+.title p{
+  margin-left: 40px;
 }
 
 .loginButtonContainer{
@@ -86,4 +91,10 @@
   background:#fff; 
   padding:0 10px; 
   color: rgb(182, 182, 182);
+}
+
+@media (max-width: 768px) {
+  .title p{
+    margin-left: 0px;
+  }
 }

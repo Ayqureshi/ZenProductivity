@@ -7,7 +7,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.1",
-    "firebase": "^10.4.0",
+    "firebase": "^9.22.1",
+    "firebase-tools": "^13.0.2",
     "lint": "^1.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
@@ -20,9 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,6 +45,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.8"
   },

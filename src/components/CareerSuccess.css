@@ -101,6 +101,65 @@
     }
 }
 
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .text-section {
+        width: 90%; /* Adjust width for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-top: 20px;
+    }
+  
+    .career-image {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-top: 20px;
+    }
+  
+    .playbutton {
+        width: 10vw; /* Adjust size for smaller screens */
+        top: 50vh; /* Adjust position for smaller screens */
+        left: 35vw; /* Adjust position for smaller screens */
+    }
+  
+    .custom-list {
+        margin-left: 3vw;
+    }
+  
+    .list-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+        width: 94vw; /* Adjust width for smaller screens */
+    }
+  
+    .number, .item-image {
+        margin-right: 10px; /* Adjust spacing for smaller screens */
+        margin-left: 10px; /* Adjust spacing for smaller screens */
+    }
+  
+    .item-image {
+        width: 100px; /* Adjust size for smaller screens */
+        height: 100px; /* Adjust size for smaller screens */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  
+    .audio-content h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .back {
+        width: 120px; /* Adjust width for smaller screens */
+        height: auto;
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .back:hover {
+        background-color: gray; /* Ensuring hover effect is still applicable */
+    }
+  
+    /* Adjust other elements as necessary */
+  }
+
 /* .footer {
     bottom: -1230px;
     display: none;

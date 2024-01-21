@@ -82,3 +82,57 @@ a {
   text-decoration: none;
   color: black;
 }
+
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column; /* Stack elements vertically */
+      padding: 1em; /* Adjust padding */
+      height: auto; /* Adjust height based on content */
+      border-radius: 20px 0 0 0; /* Adjust border radius */
+      align-items: center; /* Center align items */
+      justify-content: center; /* Center justify content */
+      margin-bottom: 120px;
+  }
+
+  #flex-box {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align items */
+      height: auto; /* Adjust height */
+  }
+
+  #about-us, #customer-care, #stewardship, #copy-right {
+      text-align: center; /* Center text */
+      margin-right: 0; /* Adjust margin */
+      padding: 0.5em; /* Adjust padding */
+      order: initial; /* Reset order */
+  }
+
+  #footer-img {
+      padding: 0; /* Adjust padding */
+      margin: 0.5em 0; /* Adjust margin */
+  }
+
+  #vertical-line {
+      display: none; /* Hide vertical line */
+  }
+
+  #social-icons {
+      margin-left: 0; /* Adjust margin */
+      margin-right: 0; /* Adjust margin */
+      order: initial; /* Reset order */
+      margin-bottom: 1em; /* Add bottom margin */
+  }
+
+  #social-icons img {
+      width: 5vw; /* Adjust icon size */
+      height: 5vw; /* Adjust icon size */
+      margin-right: 20px; /* Adjust spacing */
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+}
