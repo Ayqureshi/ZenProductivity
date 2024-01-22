@@ -1,0 +1,138 @@
+.chatbot-title {
+    font-size: 2.5em;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first-section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.chatbot-img {
+    width: 350px;
+    height: 350px;
+    margin-right: 70px;
+}
+
+.chatbot-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 15%;
+}
+
+.bubble-container {
+    border-radius: 15%;
+    background-color: #b4dfe0;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.arrow-container {
+    width: 200px;
+    height: 200px;
+}
+
+.arrow-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.arrow-container2 {
+    width: 150px;
+    height: 150px;
+}
+
+.arrow-container2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.chatbot-text {
+    font-size: 1.5em;
+    color: black;
+}
+
+.third-section {
+    display: flex;
+    justify-content: left;
+    margin-left: 15%;
+}
+
+.chatbot-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.chatbot-section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 800px;
+}
+
+.fourth-section {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+}
+
+.fifth-section {
+    display: flex;
+    justify-content: right;
+    margin-right: 15%;
+    margin-bottom: 30px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chatbot-img {
+        width: 80%; /* Adjusted for smaller screens */
+        height: auto; /* Keep aspect ratio */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .bubble-container {
+        width: 80%; /* Adjusted for smaller screens */
+        height: 130px; /* Height adjusts to content */
+        margin-top: 15px; /* Reduced margin-top */
+    }
+
+    .third-section, .fifth-section {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .second-section, .fourth-section {
+        margin-left: auto; /* Centered */
+        margin-right: auto; /* Centered */
+        width: 50%; /* Adjust width */
+        height: auto; /* Adjust height */
+    }
+
+    .chatbot-text {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
+}

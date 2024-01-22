@@ -14,6 +14,7 @@ function Navbar(){
             <div>
                 <ul id="navbar">
                     <li><a href="/aboutus">ABOUT US</a></li>
+                    <li><a href="/chatbot">CHATBOT</a></li>
                     {/* <li><a href="community/">COMMUNITY</a></li> */}
                     <li><a href="/audio">AUDIO</a></li>
                     <li><a href="articles/">ARTICLES</a></li>

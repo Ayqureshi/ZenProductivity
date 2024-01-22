@@ -17,6 +17,7 @@ import RemoteWorkEpisodes from "./components/RemoteWorkEpisodes";
 import Episodes from './components/Episodes';
 import Footer from "./components/Footer";
 // import Community from "./components/Community";
+import ChatBotPage from './components/chatbot/ChatBotPage';
 import AddPostPage from './components/community/AddCommunityPost';
 import Articles from './components/Articles';
 // import Loggingin from './components/loggingin';
@@ -66,6 +67,7 @@ function App() {
             <Route path="/ourteam" element={<OurTeam />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/chatbot" element={<ChatBotPage />} />
             {/* <Route path="/community" element={<Community />} /> */}
             <Route path="/community/addPost" element={<AddPostPage />} />
             <Route path="/articles" element={<Articles />} />
